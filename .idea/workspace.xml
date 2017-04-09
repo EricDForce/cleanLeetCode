@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83e82286-2bdc-4711-9806-d09628f30883" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ValidNumber.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cleanLeetCode.iws" />
@@ -50,6 +49,7 @@
         <option value="$PROJECT_DIR$/src/RWS.java" />
         <option value="$PROJECT_DIR$/src/atoi.java" />
         <option value="$PROJECT_DIR$/src/ValidNumber.java" />
+        <option value="$PROJECT_DIR$/src/LSWRC.java" />
       </list>
     </option>
   </component>
@@ -144,7 +144,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.ValidNumber">
+  <component name="RunManager" selected="Application.LSWRC">
     <configuration default="false" name="isPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="isPalindrome" />
@@ -178,6 +178,21 @@
     <configuration default="false" name="ValidNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="ValidNumber" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="cleanLeetCode" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="LSWRC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="LSWRC" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -604,16 +619,18 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.isPalindrome" />
       <item index="1" class="java.lang.String" itemvalue="Application.RWS" />
       <item index="2" class="java.lang.String" itemvalue="Application.ValidNumber" />
+      <item index="3" class="java.lang.String" itemvalue="Application.LSWRC" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.ValidNumber" />
-        <item index="1" class="java.lang.String" itemvalue="Application.RWS" />
-        <item index="2" class="java.lang.String" itemvalue="Application.isPalindrome" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.LSWRC" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ValidNumber" />
+        <item index="2" class="java.lang.String" itemvalue="Application.RWS" />
+        <item index="3" class="java.lang.String" itemvalue="Application.isPalindrome" />
       </list>
     </recent_temporary>
   </component>
@@ -629,12 +646,12 @@
       <updated>1491146134637</updated>
       <workItem from="1491146137625" duration="1563000" />
       <workItem from="1491213815427" duration="755000" />
-      <workItem from="1491574733545" duration="11765000" />
+      <workItem from="1491574733545" duration="13664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14083000" />
+    <option name="totallyTimeSpent" value="15982000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -752,6 +769,16 @@
           <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LSWRC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
