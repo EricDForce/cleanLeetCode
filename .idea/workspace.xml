@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83e82286-2bdc-4711-9806-d09628f30883" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LSWRC.java" afterPath="$PROJECT_DIR$/src/LSWRC.java" />
-    </list>
+    <list default="true" id="83e82286-2bdc-4711-9806-d09628f30883" name="Default" comment="" />
     <ignored path="cleanLeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -646,12 +644,12 @@
       <updated>1491146134637</updated>
       <workItem from="1491146137625" duration="1563000" />
       <workItem from="1491213815427" duration="755000" />
-      <workItem from="1491574733545" duration="14224000" />
+      <workItem from="1491574733545" duration="14278000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16542000" />
+    <option name="totallyTimeSpent" value="16596000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
