@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83e82286-2bdc-4711-9806-d09628f30883" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LSWRC.java" afterPath="$PROJECT_DIR$/src/LSWRC.java" />
     </list>
     <ignored path="cleanLeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -646,12 +646,12 @@
       <updated>1491146134637</updated>
       <workItem from="1491146137625" duration="1563000" />
       <workItem from="1491213815427" duration="755000" />
-      <workItem from="1491574733545" duration="13664000" />
+      <workItem from="1491574733545" duration="14224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15982000" />
+    <option name="totallyTimeSpent" value="16542000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -775,8 +775,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LSWRC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="396">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
