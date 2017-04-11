@@ -3,7 +3,7 @@
  */
 public class ValidNumber {
     public static void main(String[] args) {
-        String str = "2e10";
+        String str = "+232e-10";
         System.out.println(new ValidNumber().isNumber(str));
     }
 
