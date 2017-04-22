@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83e82286-2bdc-4711-9806-d09628f30883" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DM.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="83e82286-2bdc-4711-9806-d09628f30883" name="Default" comment="" />
     <ignored path="cleanLeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -715,12 +711,12 @@
       <workItem from="1491574733545" duration="15967000" />
       <workItem from="1491899185974" duration="6847000" />
       <workItem from="1491920895402" duration="389000" />
-      <workItem from="1492858714114" duration="5654000" />
+      <workItem from="1492858714114" duration="5960000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31175000" />
+    <option name="totallyTimeSpent" value="31481000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
