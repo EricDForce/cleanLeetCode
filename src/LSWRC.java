@@ -16,7 +16,7 @@ public class LSWRC {
         if(n==0) return 0;
 
         for (int i=0;i<n;i++){
-            if (map.get(s.charAt(i)) != null && map.get(s.charAt(i))>=j)
+            if (map.get(s.charAt(i))!= null && map.get(s.charAt(i))>=j)
                 j=map.get(s.charAt(i))+1;
             map.put(s.charAt(i), i);
             maxlen = Math.max(i - j + 1, maxlen);

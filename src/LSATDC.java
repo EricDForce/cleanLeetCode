@@ -18,6 +18,7 @@ public class LSATDC {
         }
         return Math.max(s.length() - i, maxLen);
     }
+
     public int lengthOfLongestSubstringTwoDistinctK(String s, int k){
         int[] countMap = new int[256];
         int numDistinct = 0, j = 0, maxLen = 0;
