@@ -4,7 +4,13 @@
 public class LSATDC {
     public static void main(String[] args){
         String s = "abaac";
-        System.out.println(new LSATDC().lengthOfLongestSubstringTwoDistinctK(s, 2));
+        int[] charMap = new int[]{1, 2, 3};
+        int[] des = new int[3];
+        System.arraycopy(charMap, 0, des, 0, 3);
+        for (int i=0; i<3; i++){
+            System.out.println(des[i]);
+        }
+//        System.out.println(new LSATDC().lengthOfLongestSubstringTwoDistinctK(s, 2));
     }
     public int lengthOfLongestSubstringTwoDistinct(String s){
         int i=0, j=-1, maxLen = 0;

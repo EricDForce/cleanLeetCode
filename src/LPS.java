@@ -1,9 +1,15 @@
+import java.util.Arrays;
+
 /**
  * Created by eric-d on 2017/4/11.
  */
 public class LPS {
     public static void main(String[] args){
         String s = "babad";
+        char[] s2c = s.toCharArray();
+        Arrays.sort(s2c);
+        String t = String.valueOf(s2c);
+        System.out.println("---:" + t);
         System.out.println(new LPS().longestPalindrome2(s));
     }
     public String longestPalindrome(String s) {

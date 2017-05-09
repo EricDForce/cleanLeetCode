@@ -4,6 +4,8 @@
 public class ValidNumber {
     public static void main(String[] args) {
         String str = "+232e-10";
+        String st = "dengli";
+//        System.out.println();
         System.out.println(new ValidNumber().isNumber(str));
     }
 
