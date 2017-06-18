@@ -1,117 +1,80 @@
-import java.util.*;
+import java.util.HashMap;
+import java.util.Scanner;
 
 /**
- * Created by eric-d on 2017/4/22.
+ * Created by eric-d on 2016/10/29.
  */
 public class Main {
-    public static void main(String[] args){
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        int m = in.nextInt();
+    public static void main(String[] args)
+    {
+        char[] biao ={'a','b','c','d','e','f','g','h','i','j'};
+        Scanner sc = new Scanner(System.in);
 
-        int[][] matrix = new int[n][n];
-        List<Integer> res = new Main().spiralOrder(matrix, m);
-        System.out.print(res.get(0)+" "+res.get(1));
-    }
+        String inString = sc.next();
+        int inNumber = sc.nextInt();
 
-    public List<Integer> spiralOrder(int[][] matrix, int m) {
-        List<Integer> res = new ArrayList<Integer>();
+        char[] inString2char = inString.toCharArray();
 
-        int i = 0;
-        int j = 0;
-        int right_max = matrix[0].length - 1;
-        int left_min = 0;
-        int up_max = 1;
-        int down_max = matrix.length - 1;
-        int cnt = 1;
+        int[] cnt = new int[10];
 
-        String flag = "right";
+        for (int i=0;i<inString.length();i++)
+        {
+            cnt[inString2char[i]-'a']++;
+        }
 
-        while (true) {
+        int[] sum = new int[10];
+        sum[0] = cnt[0];
 
-            while (flag.equals("right")) {
-                if (cnt == m) {
-                    res.add(i + 1);
-                    res.add(j + 1);
-                }
-                cnt++;
-                if (j >= matrix[0].length) {
-                    flag = "exit";
-                    break;
-                }
-                if (j == right_max) {
-                    if (i == down_max) {
-                        flag = "exit";
-                        break;
-                    }
-                    right_max = right_max - 1;
-                    flag = "down";
-                }
-            }
-
-            while (flag.equals("down")) {
-                if (cnt == m) {
-                    res.add(i + 1);
-                    res.add(j + 1);
-                }
-                cnt++;
-                if (i >= matrix.length) {
-                    flag = "exit";
-                    break;
-                }
-                if (i == down_max) {
-                    if (j == left_min) {
-                        flag = "exit";
-                        break;
-                    }
-                    down_max = down_max - 1;
-                    flag = "left";
-                }
-            }
-
-            while (flag.equals("left")) {
-                if (cnt == m) {
-                    res.add(i + 1);
-                    res.add(j + 1);
-                }
-                cnt++;
-                if (j == left_min) {
-                    if (i == up_max) {
-                        flag = "exit";
-                        break;
-                    }
-                    left_min = left_min + 1;
-                    flag = "up";
-                }
-            }
-
-            while (flag.equals("up")) {
-                if (cnt == m) {
-                    res.add(i + 1);
-                    res.add(j + 1);
-                }
-                cnt++;
-                if (i == up_max) {
-                    if (j == right_max) {
-                        flag = "exit";
-                        break;
-                    }
-                    up_max = up_max + 1;
-                    flag = "right";
-                }
-            }
-
-            if (flag.equals("exit")) {
-                if (i >= matrix.length || j >= matrix[0].length) {
-                    break;
-                }
+        for (int i=1;i<10;i++)
+        {
+            sum[i] = sum[i-1] + cnt[i];
+        }
+        int pos = 0;
+        for(int i=0;i<10;i++)
+        {
+            if(inNumber <= sum[i])
+            {
+                pos = i;
                 break;
             }
         }
-        if (res.size() == 0) {
-            res.add(i + 1);
-            res.add(j + 1);
+
+        int cha = sum[pos] - inNumber;
+        char[] result = new char[sum[pos]];
+        char[] ret = new char[inNumber];
+        int index = 0;
+        for (int i=0;i<inString.length();i++)
+        {
+            if (inString2char[i] <= biao[pos])
+            {
+                result[index++] = inString2char[i];
+            }
         }
-        return res;
+
+        if (cha == 0)
+            System.out.println(result);
+        else
+        {
+            for (int i=sum[pos]-1;i>=0;i--)
+            {
+                if(result[i] == biao[pos])
+                {
+                    result[i] = 'z';
+                    cha--;
+                }
+                if(cha==0) {
+                    break;
+                }
+            }
+            int ind = 0;
+            for (int i=0;i<=sum[pos]-1;i++)
+            {
+                if(result[i] != 'z')
+                {
+                    ret[ind++] = result[i];
+                }
+            }
+            System.out.println(ret);
+        }
     }
 }
