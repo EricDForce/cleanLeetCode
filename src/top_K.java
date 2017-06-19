@@ -25,7 +25,7 @@ public class top_K {
         PriorityQueue<Integer> result = new PriorityQueue<>();
         for (int i=0;i<nums.length;i++){
             result.offer(nums[i]);
-            if (result.size()>k){
+            if (result.size() > k){
                 result.poll();
             }
         }
