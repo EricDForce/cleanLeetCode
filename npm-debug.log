@@ -1,0 +1,192 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--global',
+1 verbose cli   'pokemon-terminal' ]
+2 info using npm@2.15.8
+3 info using node@v4.4.7
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'pokemon-terminal', null ]
+7 verbose cache add spec pokemon-terminal
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'pokemon-terminal',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'pokemon-terminal',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed pokemon-terminal@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for pokemon-terminal
+11 info addNameTag [ 'pokemon-terminal', 'latest' ]
+12 silly mapToRegistry name pokemon-terminal
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'pokemon-terminal',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'pokemon-terminal',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/pokemon-terminal
+17 verbose addNameTag registry:https://registry.npmjs.org/pokemon-terminal not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/pokemon-terminal
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 15:02:44
+21 verbose request id e951f802d93dabba
+22 http request GET https://registry.npmjs.org/pokemon-terminal
+23 http 200 https://registry.npmjs.org/pokemon-terminal
+24 verbose headers { server: 'nginx/1.10.3',
+24 verbose headers   'content-type': 'application/json',
+24 verbose headers   'last-modified': 'Sun, 18 Jun 2017 15:11:28 GMT',
+24 verbose headers   etag: 'W/"59469820-3290"',
+24 verbose headers   'content-encoding': 'gzip',
+24 verbose headers   'cache-control': 'max-age=300',
+24 verbose headers   'content-length': '4272',
+24 verbose headers   'accept-ranges': 'bytes',
+24 verbose headers   date: 'Wed, 21 Jun 2017 07:02:46 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   age: '0',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-hkg6823-HKG',
+24 verbose headers   'x-cache': 'MISS',
+24 verbose headers   'x-cache-hits': '0',
+24 verbose headers   'x-timer': 'S1498028567.733189,VS0,VE219',
+24 verbose headers   vary: 'Accept-Encoding' }
+25 silly get cb [ 200,
+25 silly get   { server: 'nginx/1.10.3',
+25 silly get     'content-type': 'application/json',
+25 silly get     'last-modified': 'Sun, 18 Jun 2017 15:11:28 GMT',
+25 silly get     etag: 'W/"59469820-3290"',
+25 silly get     'content-encoding': 'gzip',
+25 silly get     'cache-control': 'max-age=300',
+25 silly get     'content-length': '4272',
+25 silly get     'accept-ranges': 'bytes',
+25 silly get     date: 'Wed, 21 Jun 2017 07:02:46 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     age: '0',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-hkg6823-HKG',
+25 silly get     'x-cache': 'MISS',
+25 silly get     'x-cache-hits': '0',
+25 silly get     'x-timer': 'S1498028567.733189,VS0,VE219',
+25 silly get     vary: 'Accept-Encoding' } ]
+26 verbose get saving pokemon-terminal to /Users/eric-d/.npm/registry.npmjs.org/pokemon-terminal/.cache.json
+27 verbose correctMkdir /Users/eric-d/.npm correctMkdir not in flight; initializing
+28 verbose makeDirectory /Users/eric-d/.npm creation not in flight; initializing
+29 silly makeDirectory /Users/eric-d/.npm uid: 501 gid: 20
+30 silly addNameTag next cb for pokemon-terminal with tag latest
+31 silly addNamed pokemon-terminal@1.0.2
+32 verbose addNamed "1.0.2" is a plain semver version for pokemon-terminal
+33 silly mapToRegistry name pokemon-terminal
+34 silly mapToRegistry using default registry
+35 silly mapToRegistry registry https://registry.npmjs.org/
+36 silly mapToRegistry data Result {
+36 silly mapToRegistry   raw: 'pokemon-terminal',
+36 silly mapToRegistry   scope: null,
+36 silly mapToRegistry   name: 'pokemon-terminal',
+36 silly mapToRegistry   rawSpec: '',
+36 silly mapToRegistry   spec: 'latest',
+36 silly mapToRegistry   type: 'tag' }
+37 silly mapToRegistry uri https://registry.npmjs.org/pokemon-terminal
+38 verbose addRemoteTarball https://registry.npmjs.org/pokemon-terminal/-/pokemon-terminal-1.0.2.tgz not in flight; adding
+39 verbose addRemoteTarball [ 'https://registry.npmjs.org/pokemon-terminal/-/pokemon-terminal-1.0.2.tgz',
+39 verbose addRemoteTarball   '98c5d70737dbc4a121b527999688bdbc36a45ea2' ]
+40 info retry fetch attempt 1 at 15:02:47
+41 info attempt registry request try #1 at 15:02:47
+42 http fetch GET https://registry.npmjs.org/pokemon-terminal/-/pokemon-terminal-1.0.2.tgz
+43 http fetch 200 https://registry.npmjs.org/pokemon-terminal/-/pokemon-terminal-1.0.2.tgz
+44 silly fetchAndShaCheck shasum 98c5d70737dbc4a121b527999688bdbc36a45ea2
+45 verbose addTmpTarball /var/folders/z6/xpnmf1bj2bg6j3n3v75261xw0000gn/T/npm-37958-b274866d/registry.npmjs.org/pokemon-terminal/-/pokemon-terminal-1.0.2.tgz not in flight; adding
+46 verbose addTmpTarball already have metadata; skipping unpack for pokemon-terminal@1.0.2
+47 verbose correctMkdir /Users/eric-d/.npm correctMkdir not in flight; initializing
+48 silly cache afterAdd pokemon-terminal@1.0.2
+49 verbose afterAdd /Users/eric-d/.npm/pokemon-terminal/1.0.2/package/package.json not in flight; writing
+50 verbose correctMkdir /Users/eric-d/.npm correctMkdir not in flight; initializing
+51 verbose afterAdd /Users/eric-d/.npm/pokemon-terminal/1.0.2/package/package.json written
+52 silly install resolved [ { name: 'pokemon-terminal',
+52 silly install resolved     version: '1.0.2',
+52 silly install resolved     description: 'Pokemon terminal themes',
+52 silly install resolved     bin: { pokemon: 'main.py' },
+52 silly install resolved     scripts: {},
+52 silly install resolved     repository:
+52 silly install resolved      { type: 'git',
+52 silly install resolved        url: 'git+https://github.com/LazoCoder/Pokemon-Terminal.git' },
+52 silly install resolved     keywords: [ 'pokemon', 'terminal', 'theme', 'themes' ],
+52 silly install resolved     author: { name: 'Lazo', url: 'https://github.com/LazoCoder' },
+52 silly install resolved     license: 'GPL-3.0',
+52 silly install resolved     bugs: { url: 'https://github.com/LazoCoder/Pokemon-Terminal/issues' },
+52 silly install resolved     homepage: 'https://github.com/LazoCoder/Pokemon-Terminal#readme',
+52 silly install resolved     gitHead: '2e338f689bf73cde867dd3e53d9912738b2403f7',
+52 silly install resolved     _id: 'pokemon-terminal@1.0.2',
+52 silly install resolved     _npmVersion: '5.0.3',
+52 silly install resolved     _nodeVersion: '8.1.0',
+52 silly install resolved     _npmUser: { name: 'lazo', email: 'lk12yv@brocku.ca' },
+52 silly install resolved     dist:
+52 silly install resolved      { integrity: 'sha512-Ax48oCMaEj5p+K2m9V35UWiTo12MTX6kJDBtU/c+Bi1AwFM25tvX44ueFSTky38YceBxAlPfH4zsYEITVkMcpg==',
+52 silly install resolved        shasum: '98c5d70737dbc4a121b527999688bdbc36a45ea2',
+52 silly install resolved        tarball: 'https://registry.npmjs.org/pokemon-terminal/-/pokemon-terminal-1.0.2.tgz' },
+52 silly install resolved     maintainers: [ [Object] ],
+52 silly install resolved     _npmOperationalInternal:
+52 silly install resolved      { host: 's3://npm-registry-packages',
+52 silly install resolved        tmp: 'tmp/pokemon-terminal-1.0.2.tgz_1497798687988_0.5106658437289298' },
+52 silly install resolved     directories: {},
+52 silly install resolved     _shasum: '98c5d70737dbc4a121b527999688bdbc36a45ea2',
+52 silly install resolved     _resolved: 'https://registry.npmjs.org/pokemon-terminal/-/pokemon-terminal-1.0.2.tgz',
+52 silly install resolved     _from: 'pokemon-terminal@latest' } ]
+53 info install pokemon-terminal@1.0.2 into /usr/local/lib
+54 info installOne pokemon-terminal@1.0.2
+55 verbose installOne of pokemon-terminal to /usr/local/lib not in flight; installing
+56 verbose correctMkdir /Users/eric-d/.npm/_locks correctMkdir not in flight; initializing
+57 verbose makeDirectory /Users/eric-d/.npm/_locks creation not in flight; initializing
+58 silly makeDirectory /Users/eric-d/.npm/_locks uid: 501 gid: 20
+59 verbose lock using /Users/eric-d/.npm/_locks/pokemon-terminal-638d8f248322bed0.lock for /usr/local/lib/node_modules/pokemon-terminal
+60 silly install write writing pokemon-terminal 1.0.2 to /usr/local/lib/node_modules/pokemon-terminal
+61 verbose unbuild lib/node_modules/pokemon-terminal
+62 silly gentlyRm /usr/local/lib/node_modules/pokemon-terminal is being purged from base /usr/local
+63 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/pokemon-terminal
+64 verbose tar unpack /Users/eric-d/.npm/pokemon-terminal/1.0.2/package.tgz
+65 verbose tar unpacking to /usr/local/lib/node_modules/pokemon-terminal
+66 silly gentlyRm /usr/local/lib/node_modules/pokemon-terminal is being purged
+67 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/pokemon-terminal
+68 silly gunzTarPerm modes [ '755', '644' ]
+69 error tar.unpack untar error /Users/eric-d/.npm/pokemon-terminal/1.0.2/package.tgz
+70 verbose unlock done using /Users/eric-d/.npm/_locks/pokemon-terminal-638d8f248322bed0.lock for /usr/local/lib/node_modules/pokemon-terminal
+71 verbose fstream_path /usr/local/lib/node_modules/pokemon-terminal
+72 verbose fstream_type Directory
+73 verbose fstream_class DirWriter
+74 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/pokemon-terminal'
+74 verbose stack     at Error (native)
+75 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+75 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+75 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+76 verbose cwd /Users/eric-d/Desktop/java/cleanLeetCode
+77 error Darwin 16.6.0
+78 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--global" "pokemon-terminal"
+79 error node v4.4.7
+80 error npm  v2.15.8
+81 error path /usr/local/lib/node_modules/pokemon-terminal
+82 error code EACCES
+83 error errno -13
+84 error syscall mkdir
+85 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/pokemon-terminal'
+85 error     at Error (native)
+85 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/pokemon-terminal']
+85 error   errno: -13,
+85 error   code: 'EACCES',
+85 error   syscall: 'mkdir',
+85 error   path: '/usr/local/lib/node_modules/pokemon-terminal',
+85 error   fstream_type: 'Directory',
+85 error   fstream_path: '/usr/local/lib/node_modules/pokemon-terminal',
+85 error   fstream_class: 'DirWriter',
+85 error   fstream_stack:
+85 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+85 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+85 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+86 error Please try running this command again as root/Administrator.
+87 verbose exit [ -13, true ]
+88 verbose unbuild lib/node_modules/pokemon-terminal
+89 silly gentlyRm /usr/local/lib/node_modules/pokemon-terminal is being purged from base /usr/local
+90 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/pokemon-terminal
