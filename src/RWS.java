@@ -8,8 +8,8 @@ public class RWS {
     }
 
     public String reverseWords(String s){
-        StringBuilder reversed = new StringBuilder(); //经常改变的String,
-        int j=s.length();                            //用StringBuilder比较快
+        StringBuilder reversed = new StringBuilder();    //经常改变的String,
+        int j=s.length();                              //用StringBuilder比较快
         for (int i=s.length()-1;i>=0;i--) {
             if (Character.isWhitespace(s.charAt(i))) j = i;
             else if (i == 0 || Character.isWhitespace(s.charAt(i - 1))) {

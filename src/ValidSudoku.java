@@ -67,21 +67,29 @@ public class ValidSudoku {
     }
 
     public boolean isValid(char[][] board, int row, int col, char k){
-        board[row][col] = k;
+//        board[row][col] = k;
+//        HashSet<Character> rows = new HashSet<>();
+//        HashSet<Character> cols = new HashSet<>();
+//        HashSet<Character> cube = new HashSet<>();
         for (int i=0;i<9;i++){
-            HashSet<Character> rows = new HashSet<>();
-            HashSet<Character> cols = new HashSet<>();
-            HashSet<Character> cube = new HashSet<>();
-
-            if ((board[row][i] != '.' && !rows.add(board[row][i])) ||
-                    (board[i][col] != '.' && !cols.add(board[i][col]))) {
+            if ((board[row][i] != '.' && board[row][i]==k) ||
+                    (board[i][col] != '.' && board[i][col]==k)) {
                 return false;
             }
             int rowIndex = 3*(row / 3);
             int colIndex = 3*(col / 3);
-            if (board[rowIndex+i/3][colIndex+i%3] != '.' && !cube.add(board[rowIndex+i/3][colIndex+i%3])){
+            if (board[rowIndex+i/3][colIndex+i%3] != '.' && board[rowIndex+i/3][colIndex+i%3]==k){
                 return false;
             }
+//            if ((board[row][i] != '.' && !rows.add(board[row][i])) ||
+//                    (board[i][col] != '.' && !cols.add(board[i][col]))) {
+//                return false;
+//            }
+//            int rowIndex = 3*(row / 3);
+//            int colIndex = 3*(col / 3);
+//            if (board[rowIndex+i/3][colIndex+i%3] != '.' && !cube.add(board[rowIndex+i/3][colIndex+i%3])){
+//                return false;
+//            }
         }
         return true;
     }
