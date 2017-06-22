@@ -3,44 +3,53 @@
  */
 import java.util.*;
 public class Wordladder2 {
+    public class Node {
+        public int dist;
+        public String str;
+        public LinkedList<Node> prev;
+
+        public Node(int dist, String str) {
+            this.dist = dist;
+            this.str = str;
+            this.prev = new LinkedList<Node>();
+        }
+
+        public void addPrev(Node pNode) {
+            prev.add(pNode);
+        }
+    }
     public static void main(String[] args)
     {
-        String[] tt = {"hot", "dot", "dog", "lot", "log", "cog"};
-        String begin = "hit";
-        String end = "cog";
+        String[] tt ={"si","go","se","cm","so","ph","mt","db","mb","sb","kr","ln","tm","le","av","sm","ar","ci","ca","br","ti","ba","to","ra","fa","yo","ow","sn","ya","cr","po","fe","ho","ma","re","or","rn","au","ur","rh","sr","tc","lt","lo","as","fr","nb","yb","if","pb","ge","th","pm","rb","sh","co","ga","li","ha","hz","no","bi","di","hi","qa","pi","os","uh","wm","an","me","mo","na","la","st","er","sc","ne","mn","mi","am","ex","pt","io","be","fm","ta","tb","ni","mr","pa","he","lr","sq","ye"};
+        String begin = "qa";
+        String end = "sq";
         Set<String> wordList = new HashSet<>();
         for (String str : tt){
             wordList.add(str);
         }
         List<List<String>> it = new Wordladder2().findLadders(begin, end, wordList);
-        for (List<String> iter : it)
-        {
-            for (String str : iter)
-            {
-                System.out.println(str);
+        Collections.sort(it, new Comparator<List<String>>() {
+            @Override
+            public int compare(List<String> o1, List<String> o2) {
+                for (int i=0;i<o1.size();i++){
+                    if (o1.get(i).equals(o2.get(i))){
+                        continue;
+                    }else{
+                        return o1.get(i).compareTo(o2.get(i));
+                    }
+                }
+                return 0;
             }
-            System.out.println("---------------------");
-        }
+        });
+        System.out.println(it);
     }
     public List<List<String>> findLadders(String beginWord, String endWord, Set<String> wordList) {
         List<String> result = new ArrayList<>();
         List<List<String>> res = new ArrayList<>();
-        Map<String, List<String>> preString = new HashMap<>();
-        List<String> start = new ArrayList<>();
+        Map<String, Set<String>> preString = new HashMap<>();
+        Set<String> start = new HashSet<>();
         start.add("start");
         preString.put(beginWord, start);
-        if (wordList.contains(beginWord))
-        {
-            wordList.remove(beginWord);
-        }
-        boolean minLength = true;
-        if(getDis(beginWord, endWord) == 1)
-        {
-            result.add(beginWord);
-            result.add(endWord);
-            res.add(result);
-            return  res;
-        }
 
         int len = beginWord.length();
         Queue<String> queue = new LinkedList<>();
@@ -52,8 +61,13 @@ public class Wordladder2 {
         {
             char[] current = queue.poll().toCharArray();
             String tt = new String(current);
-            stay.add(tt);
-            System.out.println("current:" + tt);
+            if (tt.equals(endWord))
+            {
+                List<String> ret = new ArrayList<>();
+                ret.add(0, tt);
+                getPemutation(preString, res, ret, tt);
+                return res;
+            }
             for (int i=0;i<len;i++)
             {
                 char tmp = current[i];
@@ -69,25 +83,13 @@ public class Wordladder2 {
                         if (preString.containsKey(str)){
                             preString.get(str).add(tt);
                         }else{
-                            List<String> strList = new ArrayList<>();
+                            Set<String> strList = new HashSet<>();
                             strList.add(tt);
                             preString.put(str, strList);
                         }
-                        System.out.println("str: "+ str);
-                        if (str.equals(endWord))
-                        {
-                            List<List<String>> ttt = new ArrayList<>();
-                            List<String> ret = new ArrayList<>();
-                            ret.add(0, endWord);
-                            ret.add(0, tt);
-                            minLength = false;
-                            getPemutation(preString, ttt, ret, tt);
-                            res.addAll(ttt);
-                        }
-                        if (!str.equals(endWord)){
-//                            wordList.remove(str);
-                            queue.offer(str);
-                        }
+                        stay.add(str);
+                        queue.offer(str);
+
                         lasttmp = str;
                     }
                 }
@@ -96,9 +98,6 @@ public class Wordladder2 {
 
             if (new String(current).equals(last))
             {
-                if (!minLength){
-                    break;
-                }
                 for (String str : stay){
                     wordList.remove(str);
                 }
@@ -109,13 +108,12 @@ public class Wordladder2 {
         return res;
     }
 
-    public void getPemutation(Map<String, List<String>> preString, List<List<String>> list, List<String> tmp, String begin){
+    public void getPemutation(Map<String, Set<String>> preString, List<List<String>> list, List<String> tmp, String begin){
         for (String str : preString.get(begin)){
-            System.out.println("------------str : " + str);
+//            System.out.println("------------str : " + str);
             if (str.equals("start"))
             {
                 List<String> strList = new ArrayList<>();
-                System.out.println("-------------"+ tmp + "--------------");
                 strList.addAll(tmp);
                 list.add(strList);
                 return ;
