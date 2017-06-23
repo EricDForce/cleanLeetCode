@@ -7,8 +7,5 @@ class graphStudy{
 
     }
 
-    public int getNumber(int str)
-    {
-        return 0;
-    }
+
 }
