@@ -5,6 +5,7 @@ public class SearchInsertPosition {
     public static void main(String[] args){
         int[] nums = {1,3,5,6};
         System.out.println(new SearchInsertPosition().searchInsert(nums, 0));
+        System.out.println(new SearchInsertPosition().myPow(2, 5));
     }
     public int searchInsert(int[] nums, int target)
     {
@@ -17,22 +18,32 @@ public class SearchInsertPosition {
         }else if (nums[nums.length-1] < target){
             return nums.length;
         }
-        int mid = (l + r)/2;
-        if (nums[mid] == target)
-        {
-            return mid;
-        }else if (nums[mid] < target){
-            if (nums[mid+1] > target){
-                return mid+1;
-            }else{
-                return helper(nums, target, mid+1, r);
+        while (true) {
+            int mid = (l + r) / 2;
+            if (nums[mid] < target) {
+                if (nums[mid + 1] > target) {
+                    return mid + 1;
+                }
+                l = mid + 1;
+            } else {
+                r = mid - 1;
             }
+        }
+    }
+    public double myPow(double x, int n) {
+        if (n==0)
+            return 1;
+
+        if (n<0 && n==Integer.MIN_VALUE) {
+            return 1.0 / (myPow(x, Integer.MAX_VALUE) * x);
+        } else if (n<0 && n!=Integer.MIN_VALUE) {
+            return 1.0 / (myPow(x, -n));
+        }
+        double tmp = myPow(x, n/2);
+        if (n % 2==0){
+            return tmp*tmp;
         }else{
-            if (nums[mid-1] < target){
-                return mid;
-            }else{
-                return helper(nums, target, l, mid-1);
-            }
+            return tmp*tmp*x;
         }
     }
 }
