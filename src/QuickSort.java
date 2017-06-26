@@ -4,12 +4,13 @@
 public class QuickSort {
     public static void main(String[] args)
     {
-        int[] nums = {1,9,7,8,3,5,4,7};
-        new QuickSort().quicksort(nums, 0, nums.length-1);
-        for (int i : nums)
-        {
-            System.out.print(i+" ");
-        }
+//        int[] nums = {1,9,7,8,3,5,4,7};
+//        new QuickSort().quicksort(nums, 0, nums.length-1);
+//        for (int i : nums)
+//        {
+//            System.out.print(i+" ");
+//        }
+        System.out.println(new QuickSort().climbStairs(44));
     }
     public void quicksort(int[] nums, int l, int r)
     {
@@ -36,5 +37,38 @@ public class QuickSort {
         }
         nums[l] = pivot;
         return l;
+    }
+    public int climbStairs(int n) {
+        int[] dp = new int[n+1];
+        dp[1] = 1;
+        dp[2] = 2;
+        return helper(n, dp);
+    }
+    public int helper(int n, int[] nums)
+    {
+        if (nums[n] != 0){
+            return nums[n];
+        }
+        int t1 = 0, t2 = 0;
+        if (nums[n-1] != 0)
+            t1 = nums[n-1];
+        else
+            t1 = helper(n-1, nums);
+        if (nums[n-2] != 0)
+            t2 = nums[n-2];
+        else
+            t2 = helper(n-2, nums);
+
+        nums[n] = t1+t2;
+        return nums[n];
+    }
+    public int climbStairs2(int n) {
+        int[] dp = new int[n+2];
+        dp[1] = 1;
+        dp[2] = 2;
+        for (int i=3;i<=n;i++){
+            dp[i] = dp[i-1] + dp[i-2];
+        }
+        return dp[n];
     }
 }

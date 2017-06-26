@@ -35,9 +35,7 @@ public class top_K {
     public List<List<Integer>> SumIII(int k, int n){
         List<List<Integer>> result = new ArrayList<>();
         List<Integer> curr = new ArrayList<>();
-
         helper(result, curr, 1, n, k);
-
         return result;
     }
 
