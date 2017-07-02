@@ -9,47 +9,27 @@ public class levelorder {
         TreeNode right;
         TreeNode(int x) { val = x; }
     }
-    public static void main(String[] args)
-    {
-
-    }
-
-    public List<List<Integer>> getlevel(BST_TreeNode.TreeNode root)
+    public List<List<Integer>> getlevel(TreeNode root)
     {
         List<List<Integer>> result = new ArrayList<>();
-        if(root==null)
-        {
-            return result;
-        }
-        Queue<BST_TreeNode.TreeNode> queue = new LinkedList<>();
-
-        BST_TreeNode.TreeNode current = null;
-        BST_TreeNode.TreeNode last = root;
-        BST_TreeNode.TreeNode tail = root;
-        queue.offer(root);
         List<Integer> tmp = new ArrayList<>();
+        if(root==null)
+            return result;
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        TreeNode tail = root;
+        TreeNode last = root;
+        queue.offer(root);
         while(!queue.isEmpty())
         {
-            current = queue.poll();  //出队头元素并访问
+            TreeNode current = queue.poll();  //出队头元素并访问
 
             tmp.add(current.val);
-
-            if (current == last)
-            {
-                List<Integer> ft = new ArrayList<>();
-                ft.addAll(tmp);
-                result.add(ft);
-                tmp.clear();
-            }
-
-            if (current.left != null)
-            {
+            if (current.left != null) {
                 queue.offer(current.left);
                 tail = current.left;
             }
-
-            if (current.right != null)
-            {
+            if (current.right != null) {
                 queue.offer(current.right);
                 tail = current.right;
             }
@@ -57,6 +37,10 @@ public class levelorder {
             if(current == last)
             {
                 last = tail;
+                List<Integer> list = new ArrayList<>();
+                list.addAll(tmp);
+                tmp.clear();
+                result.add(list);
             }
         }
         return result;
