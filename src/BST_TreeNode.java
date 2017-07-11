@@ -4,7 +4,6 @@
 import java.util.*;
 
 public class BST_TreeNode {
-
      public class TreeNode {
       int val;
       TreeNode left;
@@ -14,28 +13,9 @@ public class BST_TreeNode {
 
      public static void main(String[] args)
      {
-//         List<TreeNode> result = new BST_TreeNode().generateTrees(2);
-
-//         TreeNode t = new BST_TreeNode().new TreeNode(3);
-//         t.left = null;
-//         t.right = null;
-//         new BST_TreeNode().insertBST(t, 4);
-//         new BST_TreeNode().inorder(t);
-
-//         new BST_TreeNode().BST_insert(t, 5);
-//         new BST_TreeNode().inorder(t);
-         //System.out.println(t.left.val);
-         //System.out.println(t.right.val);
-//         for(TreeNode tree : result)
-//         {
-//             new BST_TreeNode().inorder(tree);
-//             System.out.println();
-//         }
          int[] t1 = {1,2};
          int[] t2 = {2,1};
-
          TreeNode result = new BST_TreeNode().buildTree(t1, t2);
-
          new BST_TreeNode().inorder(result);
      }
 
@@ -96,7 +76,6 @@ public class BST_TreeNode {
                 {
                     if(BST_insert(tree, nums[i]))
                     {
-//                        System.out.println(tree.val);
                         result.add(tree);
                     }
                 }
@@ -167,7 +146,6 @@ public class BST_TreeNode {
 
 
     public TreeNode buildTree(int[] preorder, int[] inorder) {
-//        int len = 0;
         int len1 = preorder.length;
         int len2 = inorder.length;
         int spl = 0;

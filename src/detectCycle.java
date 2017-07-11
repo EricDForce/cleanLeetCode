@@ -6,10 +6,10 @@ import java.util.Map;
  * Created by eric-d on 2017/2/11.
  */
 public class detectCycle {
-
-//    public Solution.ListNode detectCycle3(Solution.ListNode head){
-//
-//    }
+    public static void main(String[] args){
+        String test = "nihao,qiaoan";
+        System.out.println("test : " + test);
+    }
     public Solution.ListNode detectCycle2(Solution.ListNode head){
         List<Solution.ListNode> list = new ArrayList<>();
         Solution.ListNode ptr = head;
