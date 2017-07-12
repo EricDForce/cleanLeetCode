@@ -4,13 +4,6 @@
 import java.util.*;
 
 public class BST_TreeNode {
-     public class TreeNode {
-      int val;
-      TreeNode left;
-      TreeNode right;
-      TreeNode(int x) { val = x; }
-     }
-
      public static void main(String[] args)
      {
          int[] t1 = {1,2};
@@ -26,8 +19,6 @@ public class BST_TreeNode {
              inorder(tree.left);
              System.out.println(tree.val);
              inorder(tree.right);
-         }else{
-             return ;
          }
      }
     public List<TreeNode> generateTrees(int n) {
@@ -168,7 +159,6 @@ public class BST_TreeNode {
                 break;
             }
         }
-
         int[] left = new int[spl];
         int[] leftin = new int[spl];
         int[] right = new int[len1 - 1 - spl];
@@ -190,6 +180,24 @@ public class BST_TreeNode {
         result.left = leftree;
         result.right = rightree;
 
+        return result;
+    }
+    public TreeNode buildTreeFrompreandinorder(int[] preorder, int[] inorder, int l1, int r1, int l2, int r2){
+        if (l1>r1 || l2>r2)
+            return null;
+        TreeNode leftTree = null, rightTree = null;
+        TreeNode result = new TreeNode(preorder[l1]);
+        result.left = leftTree;
+        result.right = rightTree;
+        for (int i=l2;i<=r2;i++){
+            if (preorder[l1] == inorder[i]){
+                leftTree = buildTreeFrompreandinorder(preorder, inorder, l1+1, l1+i-l2, l2, i-1);
+                rightTree = buildTreeFrompreandinorder(preorder, inorder, l1+i-l2+1, r1, i+1, r2);
+                result.left = leftTree;
+                result.right = rightTree;
+                return result;
+            }
+        }
         return result;
     }
 }

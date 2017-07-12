@@ -5,16 +5,17 @@ import java.util.PriorityQueue;
  */
 public class JustForTest {
     public static void main(String[] args){
-        String str = "dengli";
-        System.out.println("output: " + str);
-        PriorityQueue<String> queue = new PriorityQueue<>();
-        queue.offer("dengli");
-        queue.offer("bowen");
-        queue.offer("chencheng");
-        queue.offer("lilianjie");
+        int index = 0;
+        PriorityQueue<Integer> queue = new PriorityQueue<>();
+        queue.offer(100);
         while (queue.size() > 0) {
-            String st = queue.poll();
-            System.out.println("string: " + st);
+            queue.offer(index++);
+            while (queue.size() >= 4){
+                int t = queue.poll();
+                System.out.println("t: "+ t);
+            }
+            if (index == 20)
+                break;
         }
     }
 }

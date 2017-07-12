@@ -167,11 +167,9 @@ public class MatrixUDG {
      */
     public void DFS() {
         boolean[] visited = new boolean[mVexs.length];       // 顶点访问标记
-
         // 初始化所有顶点都没有被访问
         for (int i = 0; i < mVexs.length; i++)
             visited[i] = false;
-
         System.out.printf("DFS: ");
         for (int i = 0; i < mVexs.length; i++) {
             if (!visited[i])

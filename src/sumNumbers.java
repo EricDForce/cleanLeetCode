@@ -6,12 +6,12 @@ public class sumNumbers {
 
     }
 
-    public int sumNumber(BST_TreeNode.TreeNode root)
+    public int sumNumber(TreeNode root)
     {
         return getSum(root, 0);
     }
 
-    public int getSum(BST_TreeNode.TreeNode root, int sum)
+    public int getSum(TreeNode root, int sum)
     {
         if (root == null)
             return 0;

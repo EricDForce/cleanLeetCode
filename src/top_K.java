@@ -20,7 +20,6 @@ public class top_K {
             System.out.println();
         }
     }
-
     public PriorityQueue<Integer> topK(int[] nums, int k){
         PriorityQueue<Integer> result = new PriorityQueue<>();
         for (int i=0;i<nums.length;i++){
@@ -31,7 +30,6 @@ public class top_K {
         }
         return result;
     }
-
     public List<List<Integer>> SumIII(int k, int n){
         List<List<Integer>> result = new ArrayList<>();
         List<Integer> curr = new ArrayList<>();
@@ -46,7 +44,6 @@ public class top_K {
             result.add(new ArrayList<>(curr));
             return ;
         }
-
         for (int i=start;i<10;i++){
             curr.add(i);
             helper(result, curr, i+1, n-i, k);

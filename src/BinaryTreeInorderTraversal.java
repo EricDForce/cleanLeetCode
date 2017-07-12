@@ -6,11 +6,9 @@ import java.util.Stack;
  * Created by eric-d on 2017/7/1.
  */
 public class BinaryTreeInorderTraversal {
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
+    public static void main(String[] args){
+        String str = "dengli";
+        System.out.println("str : " + str);
     }
     public List<Integer> inorderTraversal(TreeNode root) {
         Stack<TreeNode> stack = new Stack<>();
@@ -41,6 +39,25 @@ public class BinaryTreeInorderTraversal {
         }
         return res;
     }
+
+    public List<Integer> preorderTraversal2(TreeNode root){
+        Stack<TreeNode> stack = new Stack<>();
+        List<Integer> result = new ArrayList<>();
+        TreeNode cur = root;
+        while (cur!=null || !stack.isEmpty()){
+            while (cur!=null){
+                stack.push(cur);
+                result.add(cur.val);
+                cur = cur.left;
+            }
+            if (!stack.isEmpty()){
+                cur = stack.pop();
+                cur = cur.right;
+            }
+        }
+        return result;
+    }
+
     public List<Integer> postorderTraversal(TreeNode root) {
         Stack<TreeNode> stack = new Stack<>();
         List<Integer> res = new ArrayList<>();
