@@ -25,7 +25,7 @@ public class QuickSort {
         }
 
     }
-    public static int partition(int[] nums, int l, int r)
+    public int partition(int[] nums, int l, int r)
     {
         int pivot = nums[l];
         while (l < r)

@@ -10,7 +10,7 @@ public class LSATDC {
         for (int i=0; i<3; i++){
             System.out.println(des[i]);
         }
-//        System.out.println(new LSATDC().lengthOfLongestSubstringTwoDistinctK(s, 2));
+        System.out.println(new LSATDC().lengthOfLongestSubstringTwoDistinctK(s, 2));
     }
     public int lengthOfLongestSubstringTwoDistinct(String s){
         int i=0, j=-1, maxLen = 0;
