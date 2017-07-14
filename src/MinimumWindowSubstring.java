@@ -3,7 +3,7 @@
  */
 public class MinimumWindowSubstring {
     public static void main(String[] args){
-        String s = "A";
+        String s = "ABBB";
         String t = "B";
         System.out.println("string:"+new MinimumWindowSubstring().minWindow(s, t));
     }
@@ -23,7 +23,6 @@ public class MinimumWindowSubstring {
                 curMap[s.charAt(i)]++;
                 if (curMap[s.charAt(i)] <= charMap[s.charAt(i)])
                 cnt--;
-
                 if (cnt==0){
                     while (start < s.length()&&(charMap[s.charAt(start)]==0 || curMap[s.charAt(start)]>charMap[s.charAt(start)])) {
                         if (curMap[s.charAt(start)]>charMap[s.charAt(start)])

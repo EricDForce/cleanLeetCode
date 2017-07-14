@@ -22,27 +22,20 @@ public class BST_TreeNode {
          }
      }
     public List<TreeNode> generateTrees(int n) {
-        //TreeNode T = new TreeNode();
-
         int[] nums = new int[n];
-
         for(int i=1;i<=n;i++)
         {
             nums[i-1] = i;
         }
-
         return generateTrees2(nums);
     }
 
     public List<TreeNode> generateTrees2(int[] nums)
     {
-        List<TreeNode> result = new ArrayList<TreeNode>();
+        List<TreeNode> result = new ArrayList<>();
         int len = nums.length;
-
         if(len<=0)
-        {
             return result;
-        }
         if(nums.length==1)
         {
             TreeNode T = new TreeNode(nums[0]);
@@ -134,7 +127,6 @@ public class BST_TreeNode {
         }
         return false;
     }
-
 
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         int len1 = preorder.length;

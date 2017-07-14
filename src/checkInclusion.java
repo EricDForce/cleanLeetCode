@@ -7,7 +7,6 @@ public class checkInclusion {
     public static void main(String[] args){
         String t1 = "1234";
         System.out.println(Integer.valueOf(t1));
-
         System.out.println(new checkInclusion().checkInclusion2("hello", "ooolleoooleh"));
         System.out.println(new checkInclusion().checkInclusion3("ccc", "cbac"));
     }
