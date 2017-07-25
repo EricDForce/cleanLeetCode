@@ -4,13 +4,13 @@
 public class QuickSort {
     public static void main(String[] args)
     {
-//        int[] nums = {1,9,7,8,3,5,4,7};
-//        new QuickSort().quicksort(nums, 0, nums.length-1);
-//        for (int i : nums)
-//        {
-//            System.out.print(i+" ");
-//        }
-        System.out.println(new QuickSort().climbStairs(44));
+        int[] nums = {1,9,7,8,3,5,4,7,10,2,40};
+        new QuickSort().quicksort(nums, 0, nums.length-1);
+        for (int i : nums)
+        {
+            System.out.print(i+" ");
+        }
+//        System.out.println(new QuickSort().climbStairs(44));
     }
     public void quicksort(int[] nums, int l, int r)
     {

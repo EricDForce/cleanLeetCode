@@ -24,15 +24,13 @@ public class list_test {
         list.add(4);
         list.add(4);
 
-        for (String str : setstr){
+        for (String str : setstr) {
             System.out.println(str);
         }
-//        Collections.sort(list);
-        for (int i : set){
+        for (int i : set) {
             System.out.println("i: " + i);
         }
-        for (int i : list)
-        {
+        for (int i : list) {
             System.out.println("i : " + i);
         }
     }
