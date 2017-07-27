@@ -13,11 +13,10 @@ public class test {
         HashMap<Integer, String> map = new HashMap<>();
         Map<String, String> map1 = new HashMap<>();
         String s = "aabc";
-        String result = s;
-        s = "sf";
-        System.out.println("result :" + result);
         System.out.println("s : " + s);
-//        permutation1(s, result, s.length());
+        LinkedList<String> listStr = new LinkedList<>();
+        allPermutation(s.toCharArray(), listStr, 0);
+        System.out.println(listStr);
     }
 
     public static void permutation1(String str ,String result ,int len){
@@ -64,6 +63,37 @@ public class test {
         }
     }
 
+    private static void allPermutation(char[] c, LinkedList<String> listStr, int start){
+
+
+        if(start == c.length-1)
+            listStr.add(String.valueOf(c));
+        else{
+            for(int i = start; i <= c.length-1; i++)
+            {
+                if (!isSwap(c, start, i)) {    //之前交换过的就不交换了
+                    swap(c, i, start);//相当于: 固定第 i 个字符
+                    allPermutation(c, listStr, start + 1);//求出这种情形下的所有排列
+                    swap(c, start, i);//复位
+                }
+            }
+        }
+    }
+    private static boolean isSwap(char[] c, int start, int end)
+    {
+        for(int i = start; i < end; i++)
+        {
+            if(c[i] == c[end])
+                return true;
+        }
+        return false;
+    }
+    private static void swap(char[] c, int i, int j){
+        char tmp;
+        tmp = c[i];
+        c[i] = c[j];
+        c[j] = tmp;
+    }
     public int trailingZeroes(int n) {
         if(n<1) return 0;
         int c = 0;
