@@ -7,18 +7,18 @@ import java.util.PriorityQueue;
  */
 public class top_K {
     public static void main(String[] args){
-//        int[] nums = new int[]{1,2,8,5,7,9,10,6};
-//        PriorityQueue<Integer> res = new top_K().topK(nums, 3);
-//        while (res.size()>0){
-//            System.out.println(res.poll());
-//        }
-        List<List<Integer>> result = new top_K().SumIII(3, 7);
-        for (List<Integer> list : result){
-            for (int i : list){
-                System.out.print(" " + i);
-            }
-            System.out.println();
+        int[] nums = new int[]{1,2,8,5,7,9,10,6};
+        PriorityQueue<Integer> res = new top_K().topK(nums, 3);
+        while (res.size()>0){
+            System.out.println(res.poll());
         }
+//        List<List<Integer>> result = new top_K().SumIII(3, 7);
+//        for (List<Integer> list : result){
+//            for (int i : list){
+//                System.out.print(" " + i);
+//            }
+//            System.out.println();
+//        }
     }
     public PriorityQueue<Integer> topK(int[] nums, int k){
         PriorityQueue<Integer> result = new PriorityQueue<>();
