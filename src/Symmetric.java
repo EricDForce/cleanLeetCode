@@ -59,6 +59,5 @@ public class Symmetric {
         }
 
         return isSymmetric2(lt.left, rt.right) && isSymmetric2(lt.right, rt.left);
-
     }
 }

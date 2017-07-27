@@ -12,54 +12,56 @@ public class test {
         List<Integer>  test = new ArrayList<Integer>();
         HashMap<Integer, String> map = new HashMap<>();
         Map<String, String> map1 = new HashMap<>();
-        int te = 100;
-        String t = "dengli";
-//        map.containsKey()
-        t = t.substring(0, 3) + "(" + t.substring(3, t.length()) + ")";
-//        System.out.println("t :" + t);
-//        System.out.println(String.valueOf(te));
-//        map1.put("dengli", "bowen");
-//        map1.put("dengli", "jinke");
-//        Set<String> ketSet = map1.keySet();
-//        for (String key : ketSet){
-//            System.out.println(map1.get(key));
-//        }
-//        String t = "e";
-//        t.toCharArray();
-//        String[] tmp = t.split("1e");
-//        String tt = "dengli";
-//        tt.charAt(0);
-//        List<Integer> list = new ArrayList<>();
+        String s = "aabc";
+        String result = s;
+        s = "sf";
+        System.out.println("result :" + result);
+        System.out.println("s : " + s);
+//        permutation1(s, result, s.length());
+    }
 
-//        List<Integer> list = new ArrayList<>();
-//        Map<Integer, Integer> map = new HashMap<>();
-        
-//        list.add(1);
-//        list.add(2);
+    public static void permutation1(String str ,String result ,int len){
+        /* 全排列 递归实现
+      递归树：
+          str:          a            b                c
+                      ab ac         ba   bc         ca   cb
+        result:        abc acb        bac    bca      cab   cba
+         */
 
-//        list.add(0, 5);
-//        String str = "01";
-//        System.out.println(str.substring(0,0).length());
-//
-//        char s2c = '5';
-//
-//        if (s2c == '5')
-//        {
-//            System.out.println(s2c);
-//        }
-//        System.out.println(Integer.parseInt(str));
+        //结果 开始传入""   空字符进入   len   是这个数的长度
+        if(result.length()==len){            //表示遍历完了一个全排列结果
+            System.out.println(result);
+        }
+        else{
+            for(int i=0;i<str.length();i++){
+                if(result.indexOf(str.charAt(i))<0){    //返回指定字符在此字符串中第一次出现处的索引。
+                    //System.out.println("字母："+str.charAt(i));
+                    permutation1(str, result+str.charAt(i), len);
+                }
+            }
+        }
+    }
 
-//        for (int iter : list)
-//        {
-//            System.out.println(iter);
-//        }
+    public static void permutation2(String str ,String result ,int len, ArrayList<String> res){
+        /* 全排列 递归实现
+      递归树：
+          str:          a            b                c
+                      ab ac         ba   bc         ca   cb
+        result:        abc acb        bac    bca      cab   cba
+         */
 
-//        System.out.println(new test().fractionToDecimal(-2147483648, 1));
-//         System.out.println(new test().trailingZeroes(1808548329));
-//        System.out.println(new test().trailingZeroes1(1808548329));
-        int a = 1234;
-        String str = String.valueOf(a);
-        System.out.println(str);
+        //结果 开始传入""   空字符进入   len   是这个数的长度
+        if(result.length()==len){            //表示遍历完了一个全排列结果
+            res.add(result);
+        }
+        else{
+            for(int i=0;i<str.length();i++){
+                if(result.indexOf(str.charAt(i))<0){    //返回指定字符在此字符串中第一次出现处的索引。
+                    //System.out.println("字母："+str.charAt(i));
+                    permutation1(str, result+str.charAt(i), len);
+                }
+            }
+        }
     }
 
     public int trailingZeroes(int n) {
