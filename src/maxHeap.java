@@ -1,12 +1,16 @@
 public class maxHeap {
 
     public static void main(String[] args) {
-        int[] a = {3, 2, 1, 5, 6, 4};
+        int[] a = {3, 2, 1, 5, 6, 4, 7, 8, 9, 7};
         System.out.println(findKthLargest(a, 1));
         int[] b = {-1, 2, 0};
         System.out.println(findKthLargest(b, 3));
         int[] c = {3, 1, 2, 4};
-        System.out.println(findKthLargest(c, 2));
+        new maxHeap().heapSort(a);
+        System.out.println();
+        for (int i=0;i<a.length;i++){
+            System.out.print(a[i]+" ");
+        }
     }
 
     public static int findKthLargest(int[] nums, int k) {
@@ -52,6 +56,38 @@ public class maxHeap {
         int temp = heap[parent];
         heap[parent] = heap[p];
         heap[p] = temp;
+    }
+
+    public void heapSort(int[] array){
+        int heapSize = array.length;
+        buildHeap(array, heapSize);
+        for (int i=0;i<heapSize;i++){
+            System.out.print(array[i] + " ");
+        }
+        for (int i=0;i<array.length;i++){
+            swap(array, 0, heapSize-1);
+            heapSize--;
+            Maxify(array, 0, heapSize);
+        }
+    }
+    public void buildHeap(int[] array, int heapSize){
+        int half = heapSize >> 1;
+        for (int i=half-1;i>=0;i--){
+            Maxify(array, i, heapSize);
+        }
+    }
+    public void Maxify(int[] array, int i, int heapSize){
+        int l = (i << 1) + 1, r = (i+1) << 1, largest = i;
+        if (l<heapSize && array[l] > array[largest]){
+            largest = l;
+        }
+        if (r<heapSize && array[r] > array[largest]){
+            largest = r;
+        }
+        if (i==largest || largest >= heapSize)
+            return;
+        swap(array, i, largest);
+        Maxify(array, largest, heapSize);
     }
 }
 

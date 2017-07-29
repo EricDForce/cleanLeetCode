@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
 
@@ -21,7 +22,12 @@ public class top_K {
 //        }
     }
     public PriorityQueue<Integer> topK(int[] nums, int k){
-        PriorityQueue<Integer> result = new PriorityQueue<>();
+        PriorityQueue<Integer> result = new PriorityQueue<>(100, new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o2-o1;
+            }
+        });
         for (int i=0;i<nums.length;i++){
             result.offer(nums[i]);
             if (result.size() > k){

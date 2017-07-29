@@ -13,10 +13,15 @@ public class test {
         HashMap<Integer, String> map = new HashMap<>();
         Map<String, String> map1 = new HashMap<>();
         String s = "aabc";
-        System.out.println("s : " + s);
-        LinkedList<String> listStr = new LinkedList<>();
-        allPermutation(s.toCharArray(), listStr, 0);
-        System.out.println(listStr);
+//        System.out.println("s : " + s);
+//        LinkedList<String> listStr = new LinkedList<>();
+//        allPermutation(s.toCharArray(), listStr, 0);
+//        System.out.println(listStr);
+        Integer[] t = {9,45,3,2};
+        new test().sortArray(t);
+        for (Integer i : t){
+            System.out.println(i);
+        }
     }
 
     public static void permutation1(String str ,String result ,int len){
@@ -124,7 +129,17 @@ public class test {
         }
         return cnt;
     }
-
+class numCompare implements Comparator<Integer>{
+    public int compare(Integer o1, Integer o2){
+        String s1 = String.valueOf(o1);
+        String s2 = String .valueOf(o2);
+        return (s1+s2).compareTo((s2+s1));
+    }
+}
+    public Integer[] sortArray(Integer[] nums){
+        Arrays.sort(nums, new numCompare());
+        return nums;
+    }
     public String fractionToDecimal(int numerator, int denominator) {
         Map<Long, Integer> map = new HashMap<>();
         boolean flag = false;
