@@ -30,7 +30,7 @@ public class maxHeap {
             heap[0] = nums[i];              //从上往下调整
             int p = 0;
             while (p < k) {
-                int minChild = 2 * p + 1;
+                int minChild = p << 1 + 1;
                 if (minChild + 1 < k && heap[minChild] > heap[minChild + 1]) minChild++; //先求出两孩子中较小者
                 if (minChild < k && heap[p] > heap[minChild]) {
                     swap(heap, p, minChild);

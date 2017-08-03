@@ -6,7 +6,6 @@ public class search {
     public int searchMatrix(int[][] matrix, int target) {
         int cnt = 0;
         for(int i=0;i<matrix.length;i++){
-            System.out.println("i: " + i);
             if(searchArray(matrix[i], target))
                 cnt++;
         }
@@ -16,7 +15,6 @@ public class search {
         int l = 0, r = array.length-1;
         while(l <= r){
             int mid = (l+r)>>1;
-//            System.out.println("mid : " + mid);
             if(array[mid] == target)
                 return true;
             else if(array[mid] > target){
