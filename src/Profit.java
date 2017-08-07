@@ -31,7 +31,6 @@ public class Profit {
             {
                 low = i;
             }
-
             left[i] = Math.max(prices[i] - prices[low], left[i-1]);
         }
 
@@ -41,7 +40,6 @@ public class Profit {
             {
                 high = i;
             }
-
             right[i] = Math.max(prices[high] - prices[i], right[i+1]);
         }
         int profit = 0;
@@ -50,7 +48,5 @@ public class Profit {
             profit = Math.max(profit, left[i] + right[i]);
         }
         return profit;
-
     }
-
 }
