@@ -25,9 +25,8 @@ public class wangyi2 {
                 int now = 0;
                 for(int z =0; z < n; z++){
                     now += sum.get(z);
-                    ans[z] = Math.min(now,ans[z]);
+                    ans[z] = Math.min(now, ans[z]);
                 }
-
             }
         for(int i = 0; i < n-1; i++)
             System.out.print(ans[i] + " ");
