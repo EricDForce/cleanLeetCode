@@ -45,9 +45,7 @@ public class NextPermutation {
 
     public void reverseArray(int[] nums, int l, int r){
         while(l < r){
-            int tmp = nums[l];
-            nums[l] = nums[r];
-            nums[r] = tmp;
+            swap(nums, l, r);
             l++;
             r--;
         }

@@ -6,15 +6,15 @@ import java.util.List;
  */
 public class PalindromePartitioning {
     public static void main(String[] args){
-        String test = "aaabb";
-//        List<List<String>> res = new PalindromePartitioning().partition(test);
-//        for (List<String> iter : res){
-//            for (String it : iter){
-//                System.out.print(it + " ");
-//            }
-//            System.out.println();
-//        }
-        System.out.println(new PalindromePartitioning().minCut(test));
+        String test = "aab";
+        List<List<String>> res = new PalindromePartitioning().partitionII(test);
+        for (List<String> iter : res){
+            for (String it : iter){
+                System.out.print(it + " ");
+            }
+            System.out.println();
+        }
+//        System.out.println(new PalindromePartitioning().minCut(test));
     }
 
     public List<List<String>> partition(String s)
@@ -46,6 +46,24 @@ public class PalindromePartitioning {
         return res;
     }
 
+    public List<List<String>> partitionII(String s) {
+        List<List<String>> result = new ArrayList<>();
+        helper(s, 0, result, new ArrayList<String>());
+        return result;
+    }
+    public void helper(String s, int start, List<List<String>> result, List<String> tempList){
+        if (start==s.length()){
+            result.add(new ArrayList<>(tempList));
+        }else {
+            for (int i = start + 1; i <= s.length(); i++) {
+                if (judge(s.substring(start, i))) {
+                    tempList.add(s.substring(start, i));
+                    helper(s, i, result, tempList);
+                    tempList.remove(tempList.size() - 1);
+                }
+            }
+        }
+    }
     public int minCut(String s) {
         int len = s.length();
         int[] cuts = new int[len+1];
