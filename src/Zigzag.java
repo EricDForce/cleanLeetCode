@@ -14,8 +14,7 @@ public class Zigzag {
         boolean bool  = false;  //向下
         int index = 0;
         int t = 0;
-        while(index < s.length())
-        {
+        while(index < s.length()) {
             if((t+1) == numRows || t==0){
                 bool = !bool;
             }

@@ -21,19 +21,17 @@ public class ValidSudoku {
     }
 
     public boolean helper(char[][] board){
-        for (int i=0;i<9;i++){
-            for (int j=0;j<9;j++){
+        for (int i=0; i<9; i++){
+            for (int j=0; j<9; j++){
                 if (board[i][j] == '.'){
                     for (char k='1';k<='9';k++){
-                        if (isValid(board, i, j, k))
-                        {
+                        if (isValid(board, i, j, k)) {
                             board[i][j] = k;
                             if (!helper(board))
                                 board[i][j] = '.';
                             else
                                 return true;
-                        } else
-                        {
+                        } else {
                             board[i][j] = '.';
                         }
                     }
