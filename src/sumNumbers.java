@@ -6,8 +6,7 @@ public class sumNumbers {
 
     }
 
-    public int sumNumber(TreeNode root)
-    {
+    public int sumNumber(TreeNode root) {
         return getSum(root, 0);
     }
 
@@ -15,11 +14,9 @@ public class sumNumbers {
     {
         if (root == null)
             return 0;
-
         if (root.left == null && root.right == null){
             return sum * 10 + root.val;
         }
-
         return getSum(root.left, sum*10 + root.val) + getSum(root.right, sum*10 + root.val);
     }
 }
