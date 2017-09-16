@@ -22,7 +22,7 @@ public class didi4 {
         int[][] result = new int[nums.length][nums.length];
         for (int i = 0 ; i < nums.length; i++){
             sum += nums[i];
-            if (map.containsKey(sum%k)){
+            if (map.containsKey(sum%k)) {
                 result[index][0] = map.get(sum%k);
                 result[index][1] = i;
                 map.clear();
@@ -32,15 +32,15 @@ public class didi4 {
         return result;
     }
     public static int getPartition(int[] nums) {
-        int result = 0, n = nums.length, count = 0;
+        int res = 0, n = nums.length, count = 0;
         Set<Integer> set = new HashSet<>();
         for (int i = 0; i < n; i++) {
-            result = result ^ nums[i];
-            if (set.contains(result)) {
+            res = res ^ nums[i];
+            if (set.contains(res)) {
                 count++;
                 set.clear();
             }
-            set.add(result);
+            set.add(res);
         }
         return count;
     }
