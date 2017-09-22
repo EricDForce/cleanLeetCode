@@ -1,5 +1,3 @@
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
@@ -9,7 +7,7 @@ public class didi2 {
         String[] strList = sc.nextLine().split(" ");
         int k =sc.nextInt();
         int[] nums = new int[strList.length];
-        for (int i=0;i<strList.length;i++) {
+        for (int i=0; i<strList.length; i++) {
             nums[i] = Integer.parseInt(strList[i]);
         }
         PriorityQueue<Integer> result = new didi2().topK(nums, k);

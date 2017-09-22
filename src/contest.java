@@ -10,14 +10,12 @@ public class contest {
     public int findPairs(int[] nums, int k) {
         List<Integer> list = new ArrayList<>();
         int cnt = 0;
-        for(int i=0;i<nums.length;i++){
+        for(int i=0; i<nums.length; i++){
             if(list.contains(nums[i])){
-                System.out.println("nums[i] : " + nums[i]);
-                System.out.println(cnt);
                 cnt++;
             }
-            list.add(k-nums[i]);
-            list.add(k+nums[i]);
+            list.add(k - nums[i]);
+            list.add(k + nums[i]);
         }
         return cnt;
     }
