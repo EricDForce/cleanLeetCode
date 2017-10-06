@@ -12,32 +12,23 @@ public class leetcode1 {
         int[] sum = new  int[nums.length];
         int result = 0;
 
-        if(nums.length == 0)
-        {
+        if(nums.length == 0) {
             return 0;
         }
         result = nums[0];
         sum[0] = nums[0];
 
-        for (int i = 1; i < nums.length; i++)
-        {
-            if(sum[i-1] + nums[i] <= nums[i])
-            {
+        for (int i = 1; i < nums.length; i++) {
+            if(sum[i-1] + nums[i] <= nums[i]) {
                 sum[i] = nums[i];
-            }
-            else
-            {
+            } else {
                 sum[i] = sum[i-1] + nums[i];
             }
         }
 
-        for (int i = 0; i < nums.length; i++)
-        {
-            if (result < sum[i]) {
-                result = sum[i];
-            }
+        for (int i = 0; i < nums.length; i++) {
+            result = Math.max(result, sum[i]);
         }
-
         return result;
     }
 }
