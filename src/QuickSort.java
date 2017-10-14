@@ -71,4 +71,29 @@ public class QuickSort {
         }
         return dp[n];
     }
+    //链表的快排
+    public void quickSortList(ListNode begin, ListNode end){
+        if (begin==null || end==null || begin==end)
+            return ;
+        ListNode first = begin, second = first.next;
+        int midValue = first.val;
+        while(second.next != null && second != null){
+            if (second.val < midValue){
+                first = first.next;
+                if(first != second){
+                    int tmp = first.val;
+                    first.val = second.val;
+                    second.val = tmp;
+                }
+            }
+            second = second.next;
+        }
+        if (begin != first) {   //将midValue放到合适的位置
+            int temp = begin.val;
+            begin.val = first.val;
+            first.val = temp;
+        }
+        quickSortList(begin, first);
+        quickSortList(first.next, end);
+    }
 }
