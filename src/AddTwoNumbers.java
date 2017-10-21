@@ -16,8 +16,7 @@ public class AddTwoNumbers {
         ListNode p = result;
         int tmp = 0, left = 0, right = 0;
 
-        while (p1 != null && p2 != null)
-        {
+        while (p1 != null && p2 != null) {
             tmp = (p1.val+p2.val+right);
             left = tmp % 10;
             right = tmp / 10;
@@ -28,8 +27,7 @@ public class AddTwoNumbers {
             p2 = p2.next;
         }
 
-        while (p1 != null)
-        {
+        while (p1 != null) {
             tmp = (p1.val+right);
             left = tmp % 10;
             right = tmp / 10;
