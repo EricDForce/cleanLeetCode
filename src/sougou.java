@@ -5,8 +5,8 @@ public class sougou {
         int[][] nums = {{2, 3}, {3, 4}, {5, 6}, {7, 8}};
         List<Set<Integer>> list = new ArrayList<>();
         new sougou().build(nums, list);
-        for (int i=0; i<list.size(); i++){
-            for (int j : list.get(i)){
+        for (int i=0; i < list.size(); i++) {
+            for (int j : list.get(i)) {
                 System.out.print(j + " ");
             }
             System.out.println();
