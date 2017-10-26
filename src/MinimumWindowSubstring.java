@@ -17,8 +17,8 @@ public class MinimumWindowSubstring {
         }
         int start = 0, cnt = t.length(), MX = Integer.MAX_VALUE;
         String result = "";
-        while (start < s.length()&&charMap[s.charAt(start)]==0) start++;
-        for (int i=start;i<s.length();i++){
+        while (start < s.length() && charMap[s.charAt(start)]==0) start++;  //从字符串s的第一个
+        for (int i=start; i<s.length(); i++){
             if (charMap[s.charAt(i)] != 0){
                 curMap[s.charAt(i)]++;
                 if (curMap[s.charAt(i)] <= charMap[s.charAt(i)])
