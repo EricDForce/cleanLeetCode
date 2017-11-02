@@ -2,8 +2,7 @@
  * Created by eric-d on 2017/6/27.
  */
 public class DecodeWays {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         String s = "12120";
         System.out.println(new DecodeWays().numDecodings(s));
     }
