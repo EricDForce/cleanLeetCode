@@ -16,4 +16,8 @@ public class aiqiyi {
         count += (cnt > 0) ? cnt : 0;
         System.out.println(Math.abs(count));
     }
+    public void getNumbers(String str){
+        String result = new String("dengli");
+        System.out.println(result);
+    }
 }

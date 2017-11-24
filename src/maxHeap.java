@@ -8,7 +8,7 @@ public class maxHeap {
         int[] c = {3, 1, 2, 4};
         new maxHeap().heapSort(a);
         System.out.println();
-        for (int i=0;i<a.length;i++){
+        for (int i=0;i<a.length;i++) {
             System.out.print(a[i]+" ");
         }
     }
