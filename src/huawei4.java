@@ -37,7 +37,7 @@ public class huawei4 {
                 t += Integer.valueOf(result.charAt(i)+"")*(i+1);
             }
         }
-        num[0] = t%11;
+        num[0] = t % 11;
         return true;
     }
 }
