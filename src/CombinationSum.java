@@ -3,8 +3,8 @@ import java.util.List;
 
 public class CombinationSum {
     public static void main(String[] args){
-        int[] candidates = {2, 3, 6, 7};
-        List<List<Integer>> res = combinationSum(candidates, 7);
+        int[] candidates = {2, 3, 6, 7, 8};
+        List<List<Integer>> res = combinationSum(candidates, 9);
         for (List<Integer> list : res){
             System.out.println(list);
         }
