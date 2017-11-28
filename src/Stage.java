@@ -5,6 +5,10 @@ public class Stage{
         int boxy;
         Stage previous;
 
+        public static void main(String[] args){
+            Stage st = new Stage();
+            System.out.println(st);
+        }
         public Stage(int peoplex, int peopley) {
             this.peoplex = peoplex;
             this.peopley = peopley;
@@ -19,7 +23,7 @@ public class Stage{
 
         @Override
         public String toString() {
-            return "people:("+this.peoplex+","+this.peopley+")  box:("+this.boxx+","+this.boxy+")";
+            return "people:(" + this.peoplex + "," + this.peopley + ")  box:(" + this.boxx+"," + this.boxy + ")";
         }
 
         public Stage() {}

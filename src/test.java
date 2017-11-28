@@ -13,18 +13,16 @@ public class test {
         HashMap<Integer, String> map = new HashMap<>();
         Map<String, String> map1 = new HashMap<>();
         String s = "aabc";
-//        System.out.println("s : " + s);
-//        LinkedList<String> listStr = new LinkedList<>();
-//        allPermutation(s.toCharArray(), listStr, 0);
-//        System.out.println(listStr);
-        Integer[] t = {9,45,3,2};
+        Integer[] t = {9, 45, 3, 2};
         new test().sortArray(t);
-        for (Integer i : t){
+        for (Integer i : t) {
             System.out.println(i);
         }
+        String str = "  hello world   ";
+        System.out.println(str.trim());
     }
 
-    public static void permutation1(String str ,String result ,int len){
+    public static void permutation1(String str , String result , int len){
         /* 全排列 递归实现
       递归树：
           str:          a            b                c
@@ -59,8 +57,8 @@ public class test {
             res.add(result);
         }
         else{
-            for(int i=0;i<str.length();i++){
-                if(result.indexOf(str.charAt(i))<0){    //返回指定字符在此字符串中第一次出现处的索引。
+            for(int i=0;i<str.length();i++) {
+                if(result.indexOf(str.charAt(i))<0) {    //返回指定字符在此字符串中第一次出现处的索引。
                     //System.out.println("字母："+str.charAt(i));
                     permutation1(str, result+str.charAt(i), len);
                 }
