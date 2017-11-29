@@ -29,9 +29,9 @@ public class BinaryTreeInorderTraversal {
         Stack<TreeNode> stack = new Stack<>();
         List<Integer> res = new ArrayList<>();
         stack.push(root);
-        while (!stack.isEmpty()){
+        while (!stack.isEmpty()) {
             TreeNode t = stack.pop();
-            if (t!=null){
+            if (t!=null) {
                 stack.push(t.right);
                 stack.push(t.left);
                 res.add(t.val);

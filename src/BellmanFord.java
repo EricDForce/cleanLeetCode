@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class BellmanFord {
     public static void main(String[] args) {
         int n=4,m=4,f=2;
-        int[][] tt = {{1,2,5},{2,3,10},{3,4,20},{1,4,1}};
+        int[][] tt = {{1, 2, 5}, {2, 3, 10}, {3, 4, 20}, {1, 4, 1}};
         int[][] tl = {{2, 65}, {3, 15}};
         int[] result = new BellmanFord().maxRestTime(n, m, tt,f, tl);
         for (int i : result){

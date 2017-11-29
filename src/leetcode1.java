@@ -5,7 +5,7 @@ public class leetcode1 {
 
     public static void main(String[] args){
         leetcode1 t = new leetcode1();
-        int[] array = new int[]{-2,1,-3,4,-1,2,1,-5,4};
+        int[] array = new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4};
         System.out.println(t.maxSubArray(array));
     }
     public int maxSubArray(int[] nums){
