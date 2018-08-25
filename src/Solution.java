@@ -1,69 +1,34 @@
-import java.util.Scanner;
-
-/**
- * Created by eric-d on 2016/10/29.
- */
 public class Solution {
-
-    public class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) { val = x; }
+    public static void main(String[] args){
+        String string = "deng li";
+        System.out.println(new Solution().replaceBlank(string, 7));
     }
-
-    public static void main(String[] args)
-    {
-        ListNode t = new Solution().new ListNode(1);
-        ListNode t1 = new Solution().new ListNode(4);
-        ListNode t2 = new Solution().new ListNode(3);
-        ListNode t3 = new Solution().new ListNode(2);
-        ListNode t4 = new Solution().new ListNode(5);
-        ListNode t5 = new Solution().new ListNode(2);
-
-        t.next = t1;
-        t1.next = t2;
-        t2.next = t3;
-        t3.next = t4;
-        t4.next = t5;
-
-        ListNode res = new Solution().partition(t, 3);
-
-        while(res != null)
-        {
-            System.out.println(res.val);
-            res = res.next;
-        }
-    }
-    public ListNode partition(ListNode head, int x) {
-        ListNode newHead = new ListNode(-1);
-        ListNode bigHead = new ListNode(-1);
-        bigHead.next = null;
-        newHead.next = null;
-        ListNode pos = head;
-        ListNode tail = bigHead;
-        ListNode tail2 = newHead;
-        if(head == null || head.next == null)
-            return head;
-
-        while(pos != null)
-        {
-            if(pos.val < x)
-            {
-                ListNode tmp = pos.next;
-                pos.next = tail2.next;
-                tail2.next = pos;
-                tail2 = tail2.next;
-                pos = tmp;
-            }else{
-                ListNode tmp = pos.next;
-                pos.next = tail.next;
-                tail.next = pos;
-                tail = tail.next;
-                pos = tmp;
+    /*
+     * @param string: An array of Char
+     * @param length: The true length of the string
+     * @return: The true length of new string
+     */
+    public int replaceBlank(String string, int length) {
+        if(length == 0) return 0;
+        int cnt = 0;
+        for(int i=0; i<length; i++) {
+            if(string.charAt(i) == ' '){
+                cnt++;
             }
         }
-        tail2.next = bigHead.next;
-        return newHead.next;
+        char[] result = new char[length+2*cnt];
+        StringBuilder strbuilder = new StringBuilder();
+        int i=0, j=0;
+        while(i < length){
+            if(string.charAt(i) != ' '){
+                result[j++] = string.charAt(i);
+            }else {
+                result[j++] = '%';
+                result[j++] = '2';
+                result[j++] = '0';
+            }
+            i++;
+        }
+        return length+2*cnt;
     }
-
 }

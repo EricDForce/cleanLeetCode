@@ -2,8 +2,7 @@
  * Created by eric-d on 2017/6/26.
  */
 public class EditDistance {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         String word1 = "saprr", word2 = "wap";
         System.out.println(new EditDistance().minDistance(word1, word2));
     }

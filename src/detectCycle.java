@@ -10,13 +10,12 @@ public class detectCycle {
         String test = "nihao,qiaoan";
         System.out.println("test : " + test);
     }
-    public Solution.ListNode detectCycle2(Solution.ListNode head){
-        List<Solution.ListNode> list = new ArrayList<>();
-        Solution.ListNode ptr = head;
+    public ListNode detectCycle2(ListNode head) {
+        List<ListNode> list = new ArrayList<>();
+        ListNode ptr = head;
         while (ptr != null){
-            if (list.contains(ptr)){
+            if (list.contains(ptr))
                 return ptr;
-            }
             list.add(ptr);
             ptr = ptr.next;
         }

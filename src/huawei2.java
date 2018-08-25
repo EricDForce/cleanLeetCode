@@ -38,15 +38,18 @@ public class huawei2 {
             System.out.println("str : " + InDegree.get(str));
         }
     }
+    /*
+    map是图的邻接表示，inDegree是每个节点的入度
+    * */
     public void topoSort(Map<String, List<String>> map, Map<String, Integer> inDegree) {
         int count = 0;    //判断是否所有的顶点都出队了, 若有顶点未入队(组成环的顶点)，则这些顶点肯定不会出队
         Queue<String> queue = new LinkedList<>();
-        for (String str : inDegree.keySet()){
-            if (inDegree.get(str) == 0){
+        for (String str : inDegree.keySet()) {
+            if (inDegree.get(str) == 0) {
                 queue.offer(str);
             }
         }
-        while (!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             String cur = queue.poll();
             System.out.println("here : " + cur);
             result.put(cur, "false");
@@ -54,15 +57,15 @@ public class huawei2 {
             if (map.containsKey(cur)) {
                 for (String item : map.get(cur)) {
                     inDegree.put(item, inDegree.get(item)-1);
-                    if (inDegree.get(item) == 0){
+                    if (inDegree.get(item) == 0) {
                         queue.offer(item);
                     }
                 }
             }
         }
-        if (count != set.size()){
-            for (String tt : set){
-                if (!result.keySet().contains(tt)){
+        if (count != set.size()) {
+            for (String tt : set) {
+                if (!result.keySet().contains(tt)) {
                     result.put(tt, "true");
                 }
             }
