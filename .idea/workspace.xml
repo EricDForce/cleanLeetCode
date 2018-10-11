@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83e82286-2bdc-4711-9806-d09628f30883" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/RemoveNthNodeFromEndofList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/grayCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grayCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cleanLeetCode/EditDistance.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cleanLeetCode/EditDistance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cleanLeetCode/Solution$ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cleanLeetCode/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cleanLeetCode/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cleanLeetCode/detectCycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cleanLeetCode/detectCycle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cleanLeetCode/grayCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cleanLeetCode/grayCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cleanLeetCode/huawei2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cleanLeetCode/huawei2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cleanLeetCode/reverselist$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cleanLeetCode/reverselist$ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cleanLeetCode/reverselist.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cleanLeetCode/reverselist.class" afterDir="false" />
     </list>
     <ignored path="cleanLeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,30 +30,31 @@
     <session id="975656551">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="2" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="8" />
+          <entry key="java" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="8" />
+          <entry key="JAVA" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="83" />
+          <entry key="java" value="887" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="83" />
+          <entry key="JAVA" value="887" />
         </counts>
       </usages-collector>
     </session>
@@ -54,39 +63,12 @@
     <favorites_list name="cleanLeetCode" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DistPar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DistinctSubsequences.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Graph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2440">
-              <caret line="126" column="30" selection-start-line="126" selection-start-column="30" selection-end-line="126" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/grayCode.java">
+        <entry file="file://$PROJECT_DIR$/src/RemoveNthNodeFromEndofList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="258">
+              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -121,6 +103,7 @@
         <option value="$PROJECT_DIR$/src/LSATDC.java" />
         <option value="$PROJECT_DIR$/src/strStr.java" />
         <option value="$PROJECT_DIR$/src/grayCode.java" />
+        <option value="$PROJECT_DIR$/src/RemoveNthNodeFromEndofList.java" />
       </list>
     </option>
   </component>
@@ -158,9 +141,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -172,7 +155,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535218774479" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539270125230" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.JSON" />
@@ -193,7 +176,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LSATDC">
+  <component name="RunManager" selected="Application.RemoveNthNodeFromEndofList">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -296,16 +279,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LPS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LPS" />
+    <configuration name="LSATDC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LSATDC" />
       <module name="cleanLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LSATDC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LSATDC" />
+    <configuration name="RemoveNthNodeFromEndofList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RemoveNthNodeFromEndofList" />
       <module name="cleanLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -318,8 +301,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="atoi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="atoi" />
+    <configuration name="aiqiyi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aiqiyi" />
       <module name="cleanLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -446,18 +429,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.LSATDC" />
-      <item itemvalue="Application.LPS" />
-      <item itemvalue="Application.atoi" />
       <item itemvalue="Application.checkInclusion" />
       <item itemvalue="Application.sllsl" />
+      <item itemvalue="Application.aiqiyi" />
+      <item itemvalue="Application.RemoveNthNodeFromEndofList" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RemoveNthNodeFromEndofList" />
+        <item itemvalue="Application.aiqiyi" />
         <item itemvalue="Application.LSATDC" />
         <item itemvalue="Application.sllsl" />
         <item itemvalue="Application.checkInclusion" />
-        <item itemvalue="Application.LPS" />
-        <item itemvalue="Application.atoi" />
       </list>
     </recent_temporary>
   </component>
@@ -488,11 +471,13 @@
       <workItem from="1535218385981" duration="379000" />
       <workItem from="1536452410133" duration="771000" />
       <workItem from="1536492189789" duration="302000" />
+      <workItem from="1539264392152" duration="88000" />
+      <workItem from="1539268773167" duration="1291000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46296000" />
+    <option name="totallyTimeSpent" value="47699000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -507,7 +492,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21763754" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23139158" />
       <window_info id="Structure" order="1" weight="0.24798061" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -516,12 +501,12 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32784638" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32784638" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27023318" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32784638" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32876712" />
@@ -701,6 +686,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
           <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/didi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AddTwoNumbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aiqiyi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RemoveNthNodeFromEndofList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
         </state>
       </provider>
     </entry>
