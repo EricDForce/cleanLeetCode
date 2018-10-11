@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83e82286-2bdc-4711-9806-d09628f30883" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/RemoveNthNodeFromEndofList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cleanLeetCode/EditDistance.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cleanLeetCode/EditDistance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cleanLeetCode/Solution$ListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cleanLeetCode/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cleanLeetCode/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cleanLeetCode/detectCycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cleanLeetCode/detectCycle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cleanLeetCode/grayCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cleanLeetCode/grayCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cleanLeetCode/huawei2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cleanLeetCode/huawei2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cleanLeetCode/reverselist$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cleanLeetCode/reverselist$ListNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cleanLeetCode/reverselist.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cleanLeetCode/reverselist.class" afterDir="false" />
-    </list>
+    <list default="true" id="83e82286-2bdc-4711-9806-d09628f30883" name="Default" comment="" />
     <ignored path="cleanLeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -39,12 +28,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="12" />
+          <entry key="java" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="12" />
+          <entry key="JAVA" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -67,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/RemoveNthNodeFromEndofList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+            <state relative-caret-position="40">
+              <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -477,7 +466,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47699000" />
+    <option name="totallyTimeSpent" value="47746000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -490,9 +479,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23139158" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23139158" />
       <window_info id="Structure" order="1" weight="0.24798061" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -501,7 +489,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32784638" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32784638" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -712,8 +700,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RemoveNthNodeFromEndofList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        <state relative-caret-position="40">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
         </state>
       </provider>
     </entry>
