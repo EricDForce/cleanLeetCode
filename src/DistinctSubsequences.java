@@ -11,9 +11,9 @@ public class DistinctSubsequences {
         int l1 = s.length(), l2 = t.length();
         int[][] dp = new int[l1+1][l2+1];
         dp[0][0] = 1;
-        for (int i=1;i<=l1;i++){
-            for (int j=0;j<=l2;j++){
-                if (j==0){
+        for (int i=1;i<=l1;i++) {
+            for (int j=0;j<=l2;j++) {
+                if (j==0) {
                     dp[i][0] = 1;
                     continue;
                 }

@@ -4,7 +4,7 @@ import java.util.Arrays;
  * Created by eric-d on 2017/4/30.
  */
 public class checkInclusion {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         String t1 = "1234";
         System.out.println(Integer.valueOf(t1));
         System.out.println(new checkInclusion().checkInclusion2("hello", "ooolleoooleh"));
