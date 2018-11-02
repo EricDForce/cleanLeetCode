@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="83e82286-2bdc-4711-9806-d09628f30883" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-=======
+    =======
     <list default="true" id="83e82286-2bdc-4711-9806-d09628f30883" name="Default" comment="" />
->>>>>>> dengli-tmp
+    &gt;&gt;&gt;&gt;&gt;&gt;&gt; dengli-tmp
     <ignored path="cleanLeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,54 +24,49 @@
     <session id="975656551">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-<<<<<<< HEAD
           <entry key="project.closed" value="4" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.3" value="1" />
-=======
+          =======
           <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="2" />
->>>>>>> dengli-tmp
+          &gt;&gt;&gt;&gt;&gt;&gt;&gt; dengli-tmp
           <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-<<<<<<< HEAD
           <entry key="java" value="10" />
-=======
+          =======
           <entry key="java" value="13" />
->>>>>>> dengli-tmp
+          &gt;&gt;&gt;&gt;&gt;&gt;&gt; dengli-tmp
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-<<<<<<< HEAD
           <entry key="JAVA" value="10" />
-=======
+          =======
           <entry key="JAVA" value="13" />
->>>>>>> dengli-tmp
+          &gt;&gt;&gt;&gt;&gt;&gt;&gt; dengli-tmp
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-<<<<<<< HEAD
           <entry key="java" value="87" />
-=======
+          =======
           <entry key="java" value="887" />
->>>>>>> dengli-tmp
+          &gt;&gt;&gt;&gt;&gt;&gt;&gt; dengli-tmp
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-<<<<<<< HEAD
           <entry key="JAVA" value="87" />
-=======
+          =======
           <entry key="JAVA" value="887" />
->>>>>>> dengli-tmp
+          &gt;&gt;&gt;&gt;&gt;&gt;&gt; dengli-tmp
         </counts>
       </usages-collector>
     </session>
@@ -83,17 +77,18 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/src/QuickSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-46">
-              <caret line="70" column="22" lean-forward="true" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
-=======
+        <entry file="file://$PROJECT_DIR$/src/QuickSort.java" />
+        &gt;
+        <provider selected="true" editor-type-id="text-editor" />
+        &gt;
+        <state relative-caret-position="-46" />
+        <caret line="70" column="22" lean-forward="true" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+        =======
         <entry file="file://$PROJECT_DIR$/src/RemoveNthNodeFromEndofList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="40">
               <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
->>>>>>> dengli-tmp
+              &gt;&gt;&gt;&gt;&gt;&gt;&gt; dengli-tmp
             </state>
           </provider>
         </entry>
@@ -135,12 +130,11 @@
         <option value="$PROJECT_DIR$/src/LSATDC.java" />
         <option value="$PROJECT_DIR$/src/strStr.java" />
         <option value="$PROJECT_DIR$/src/grayCode.java" />
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/DistinctSubsequences.java" />
         <option value="$PROJECT_DIR$/src/checkInclusion.java" />
-=======
+        =======
         <option value="$PROJECT_DIR$/src/RemoveNthNodeFromEndofList.java" />
->>>>>>> dengli-tmp
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; dengli-tmp
       </list>
     </option>
   </component>
@@ -192,11 +186,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-<<<<<<< HEAD
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539271828166" />
-=======
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539270125230" />
->>>>>>> dengli-tmp
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541131248800" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.JSON" />
@@ -217,7 +207,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RemoveNthNodeFromEndofList">
+  <component name="RunManager" selected="Application.testHashMap">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -350,16 +340,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="checkInclusion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="checkInclusion" />
+    <configuration name="sllsl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sllsl" />
       <module name="cleanLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sllsl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sllsl" />
+    <configuration name="testHashMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testHashMap" />
       <module name="cleanLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -470,18 +460,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.LSATDC" />
-      <item itemvalue="Application.checkInclusion" />
       <item itemvalue="Application.sllsl" />
       <item itemvalue="Application.aiqiyi" />
       <item itemvalue="Application.RemoveNthNodeFromEndofList" />
+      <item itemvalue="Application.testHashMap" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.testHashMap" />
         <item itemvalue="Application.RemoveNthNodeFromEndofList" />
         <item itemvalue="Application.aiqiyi" />
         <item itemvalue="Application.LSATDC" />
         <item itemvalue="Application.sllsl" />
-        <item itemvalue="Application.checkInclusion" />
       </list>
     </recent_temporary>
   </component>
@@ -512,22 +502,20 @@
       <workItem from="1535218385981" duration="379000" />
       <workItem from="1536452410133" duration="771000" />
       <workItem from="1536492189789" duration="302000" />
-<<<<<<< HEAD
       <workItem from="1536987897654" duration="5000" />
       <workItem from="1539256412053" duration="392000" />
-=======
+      =======
       <workItem from="1539264392152" duration="88000" />
       <workItem from="1539268773167" duration="1291000" />
->>>>>>> dengli-tmp
+      &gt;&gt;&gt;&gt;&gt;&gt;&gt; dengli-tmp
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
     <option name="totallyTimeSpent" value="46928000" />
-=======
+    =======
     <option name="totallyTimeSpent" value="47746000" />
->>>>>>> dengli-tmp
+    &gt;&gt;&gt;&gt;&gt;&gt;&gt; dengli-tmp
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -541,11 +529,10 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
-<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23139158" />
-=======
+      =======
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23139158" />
->>>>>>> dengli-tmp
+      &gt;&gt;&gt;&gt;&gt;&gt;&gt; dengli-tmp
       <window_info id="Structure" order="1" weight="0.24798061" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -559,11 +546,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
-<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.26886144" />
-=======
+      =======
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.27023318" />
->>>>>>> dengli-tmp
+      &gt;&gt;&gt;&gt;&gt;&gt;&gt; dengli-tmp
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32784638" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32876712" />

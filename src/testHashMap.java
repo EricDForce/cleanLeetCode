@@ -5,6 +5,14 @@ import java.util.*;
 public class testHashMap {
     public static void main(String[] args){
         Map<String, String> map = new HashMap<>(4);
+        Set<Integer> integerSet = new HashSet<>();
+        integerSet.add(10);
+        integerSet.add(13);
+        integerSet.add(11);
+        integerSet.add(14);
+        for (int tmp : integerSet) {
+            System.out.println("tmp:" + tmp);
+        }
         map.put("apple", "苹果");
         map.put("watermelon", "西瓜");
         map.put("banana", "香蕉");
