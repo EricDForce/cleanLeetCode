@@ -8,7 +8,7 @@ public class dataMedian {
     public static PriorityQueue<Integer> max = new PriorityQueue(Collections.reverseOrder());
     public static void main(String[] args){
         Integer[] nums = {1,2,5,7,9,8,4,5};
-        for (int i=0;i<nums.length;i++){
+        for (int i=0; i<nums.length; i++){
             new dataMedian().Insert(nums[i]);
         }
         Arrays.sort(nums, Collections.reverseOrder());
