@@ -10,6 +10,7 @@ public class LSWRC {
         String str = "tmmzuxt";
         System.out.println(new LSWRC().lengthOfLongestSubstring(str));
     }
+
     public int lengthOfLongestSubstring(String s) {
         Map<Character, Integer> map = new HashMap<>();
         int j=0, n=s.length(),maxlen = Integer.MIN_VALUE;
@@ -23,6 +24,7 @@ public class LSWRC {
         }
         return maxlen;
     }
+
     public int lengthOfLongestSubstring2(String s) {
         int[] charMap = new int[256];       //对于字符类型的hashMap使用整形数组即可，字符就是8位整形
         Arrays.fill(charMap, -1);

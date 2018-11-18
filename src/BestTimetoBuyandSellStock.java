@@ -15,7 +15,7 @@ public class BestTimetoBuyandSellStock {
             return 0;
         }
         int l = prices[0], max = 0;
-        for (int i=1;i<prices.length;i++)
+        for (int i=1; i<prices.length; i++)
         {
             l = Math.min(l, prices[i]);
             max = Math.max(max, prices[i]-l);
