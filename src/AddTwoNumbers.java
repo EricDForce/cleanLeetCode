@@ -4,11 +4,6 @@ import java.util.List;
  * Created by eric-d on 2017/6/23.
  */
 public class AddTwoNumbers {
-    public class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) { val = x; }
-    }
     public ListNode addTwoNumbers(ListNode l1, ListNode l2)
     {
         ListNode p1 = l1, p2 = l2;
