@@ -10,7 +10,7 @@ public class LargestRectangleinHistogram {
     }
     public int largestRectangleArea(int[] heights) {
         Stack<Integer> stack = new Stack<>();
-        int i=0,max_area=0,tp=0, area=0;
+        int i=0, max_area=0, tp, area;
         while (i<heights.length)
         {
             if (stack.isEmpty() || heights[stack.peek()]<=heights[i]){

@@ -18,11 +18,11 @@ public class Kpairs {
         }else if (k==0){
             int cnt = 0;
             for(int i=0;i<nums.length;i++){
-                if(map.containsKey(nums[i]) && map.get(nums[i]) == false){
+                if(map.containsKey(nums[i]) && !map.get(nums[i])){
                     System.out.println("i:" + i + "nums[i]:" + nums[i]);
                     cnt++;
                     map.put(nums[i], true);
-                }else if(map.containsKey(nums[i]) && map.get(nums[i]) == true){
+                }else if(map.containsKey(nums[i]) && map.get(nums[i])){
                     continue;
                 }else {
                     map.put(nums[i], false);

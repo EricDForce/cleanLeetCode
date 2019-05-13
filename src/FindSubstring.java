@@ -81,7 +81,8 @@ public class FindSubstring {
                 }
                 if(cnt == 0){
                     res.add(start);
-                    curMap.put(s.substring(start, start+l), curMap.get(s.substring(start, start+l))-1);
+                    curMap.put(s.substring(start, start+l),
+                            curMap.get(s.substring(start, start+l))-1);
                     start = start+l;
                     cnt = 1;
                 }

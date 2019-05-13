@@ -17,7 +17,8 @@ public class HasPath {
         return false;
     }
 
-    public boolean helper(char[][] matrix, String string, boolean[][] visited, int index, int row, int col) {
+    public boolean helper(char[][] matrix, String string, boolean[][] visited,
+                          int index, int row, int col) {
         if (index == string.length())
             return true;
         boolean hasPath = false;

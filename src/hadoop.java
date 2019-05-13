@@ -9,7 +9,7 @@ public class hadoop {
         System.out.println(new hadoop().getFiles("/Users/eric-d/Desktop"));
     }
 
-    public int getFiles(String path){
+    public int getFiles(String path) {
         File[] files = new File(path).listFiles();
         return files.length;
     }

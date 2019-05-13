@@ -3,7 +3,7 @@
  */
 import java.util.*;
 public class contest {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int[] nums = {1,2,3,4,5};
         System.out.println(new contest().findPairs(nums, 3));
     }
