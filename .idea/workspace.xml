@@ -2,17 +2,166 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83e82286-2bdc-4711-9806-d09628f30883" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/algorithmcode/BinarySearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CombinationSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FindSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FindSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HasPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HasPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kpairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kpairs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LargestRectangleinHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LargestRectangleinHistogram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SameTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SameTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/contest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphStudy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphStudy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hadoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hadoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddTwoNumbers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArraySort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BST_TreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BellmanFord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BestTimetoBuyandSellStock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTreeInorderTraversal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CloneGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CombinationSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CombinationSumII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DecodeWays.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DistPar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DistinctSubsequences.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditDistance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FindSubstring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerateParentheses.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HasPath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InsertionSortList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InterleavingString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interval.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JGJ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JNC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JumpGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JustForTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kpairs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LCS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LPS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LSATDC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LSWRC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LargestRectangleinHistogram.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListUDG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LongestValidParentheses.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MatrixUDG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MaximalRectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MaximalSquare.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MaximumSubarray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MedianofTwoSortedArrays.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Meituan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Meituan2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MergeTwoSortedLists.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MinimumPathSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MinimumSizeSubarraySum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MinimumWindowSubstring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NextPermutation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Numbers3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PalindromePartitioning.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PermutationsII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Profit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuickSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RWS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RWS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecoverBinarySearchTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RemoveDuplicatesfromSortedArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RemoveNthNodeFromEndofList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RotateArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SameTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchInsertPosition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Searcha2DMatrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchforaRange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SequentialSearchST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SingleNumberII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sqrtx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SubMatrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SumRoottoLeafNumbers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Surrounded.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Symmetric.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TwoSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UniqueBinarySearchTrees.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UniqueBinarySearchTreesII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UniquePaths.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ValidNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ValidSudoku.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ValidateBinarySearchTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vertex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WAP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordLadderII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wordladder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wordladder2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zigzag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiqiyi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ali.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apple_m_n.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atoi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baidu1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/checkInclusion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataMedian.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/detectCycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/didi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/didi2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/didi4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/findMin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firstMissingPositive.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firstProblem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/getListStart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphStudy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/grayCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hadoop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/huawei.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/huawei2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/huawei3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/huawei4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/huawei5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/isPalindrome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jingdong.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/justforfun.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/levelorder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/list_test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/longestCommonSubstring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/maxHeap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/maxWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partitionList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pinduoduo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pinduoduo2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pingankeji.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plusOne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reverselist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/search.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/silunbeixie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sllsl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sougou.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/staticDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strStr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/subSets.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sumNumbers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testHashMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testSystemIn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testsplit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/top_K.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/topoSort_rewrite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/toutiao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/toutiao2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/toutiao3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vmware.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wangyi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wangyi2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wangyi3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wangyiI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wangyiII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wordladderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zhaohang.java" beforeDir="false" />
     </list>
     <ignored path="cleanLeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,16 +176,20 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="cleanLeetCode" />
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AddTwoNumbers.java">
+        <entry file="file://$PROJECT_DIR$/src/algorithmcode/BinarySearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            <state relative-caret-position="200">
+              <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -111,6 +264,7 @@
         <option value="$PROJECT_DIR$/src/graphStudy.java" />
         <option value="$PROJECT_DIR$/src/hadoop.java" />
         <option value="$PROJECT_DIR$/src/HasPath.java" />
+        <option value="$PROJECT_DIR$/src/algorithmcode/BinarySearch.java" />
       </list>
     </option>
   </component>
@@ -126,6 +280,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -134,11 +289,15 @@
               <item name="cleanLeetCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="cleanLeetCode" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="cleanLeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cleanLeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -175,7 +334,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.subSets">
+  <component name="RunManager" selected="Application.BinarySearch">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -286,10 +445,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArraySort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ArraySort" />
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithmcode.BinarySearch" />
       <module name="cleanLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithmcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -439,19 +604,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.ArraySort" />
       <item itemvalue="Application.firstMissingPositive" />
       <item itemvalue="Application.plusOne" />
       <item itemvalue="Application.JumpGame" />
       <item itemvalue="Application.subSets" />
+      <item itemvalue="Application.BinarySearch" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.subSets" />
         <item itemvalue="Application.JumpGame" />
         <item itemvalue="Application.plusOne" />
         <item itemvalue="Application.firstMissingPositive" />
-        <item itemvalue="Application.ArraySort" />
       </list>
     </recent_temporary>
   </component>
@@ -512,11 +677,13 @@
       <workItem from="1547819517036" duration="383000" />
       <workItem from="1554304014917" duration="691000" />
       <workItem from="1556612798965" duration="287000" />
+      <workItem from="1557763561997" duration="47000" />
+      <workItem from="1558087551006" duration="1519000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87311000" />
+    <option name="totallyTimeSpent" value="88877000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -529,15 +696,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22734627" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23543689" />
       <window_info id="Structure" order="1" weight="0.24798061" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Palette&#9;" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="SBT Console" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.30864197" />
@@ -545,12 +712,13 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.303155" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.36351165" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32784638" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32784638" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="SBT Console" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -579,20 +747,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/testHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DistPar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/atoi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -884,13 +1038,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CombinationSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/HasPath.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -937,10 +1084,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/CombinationSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AddTwoNumbers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="47">
           <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RWS.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithmcode/BinarySearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
         </state>
       </provider>
     </entry>
