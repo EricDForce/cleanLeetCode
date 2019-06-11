@@ -8,7 +8,7 @@ public class BinarySearch {
 
 	public static void main(String[] args) {
 		int[] nums = {1,2,3,4,6,8,9,45,67,87};
-		System.out.println(BinarySearch.binarySearch(nums, 89));
+		System.out.println(BinarySearch.binarySearch(nums, 3));
 	}
 
 	public static int binarySearch(int[] nums, int x) {
